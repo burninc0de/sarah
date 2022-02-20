@@ -1,0 +1,37 @@
+tw-expression tw-hook:nth-last-of-type(2) .loading {
+ display:block;
+}
+
+tw-column tw-link span {
+overflow:hidden;
+opacity:0;
+}
+
+.typing {
+width:auto;
+display:inline-block;
+  overflow: hidden; 
+  border-right: .15em solid darkgrey;
+  white-space: nowrap;
+  margin: 0 auto; 
+  animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+	width:auto;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { 
+  width:0
+  }
+  to {
+  width:60%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: darkgrey; }
+}

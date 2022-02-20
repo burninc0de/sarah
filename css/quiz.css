@@ -1,0 +1,164 @@
+input {
+-webkit-appearance: none;
+}
+
+.post.section.post-16411.post-name-german-culture-quiz.post-author-12.single.not-page.has-thumbnail.show-thumbs form {
+    background: transparent !important;
+	
+	
+}
+
+input[type="radio"] {
+   position:absolute;
+   opacity: 0;
+   -moz-opacity: 0;
+   -webkit-opacity: 0;
+   -o-opacity: 0;
+}
+input[type="radio"] + label {
+   position:relative;
+   padding: 0 0 0 25px;
+   font-size: 16px;
+   line-height: 36px;
+}
+
+input[type="radio"] + label:before {
+   content:"";
+   display:block;
+   position:absolute;
+   top:2px;
+   height: 14px;
+   width: 14px;
+   background: white;
+   border: 1px solid gray;
+   box-shadow: inset 0px 0px 0px 2px white;
+   -webkit-box-shadow: inset 0px 0px 0px 2px white;
+   -moz-box-shadow: inset 0px 0px 0px 2px white;
+   -o-box-shadow: inset 0px 0px 0px 2px white;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -o-border-radius: 8px;
+}
+input[type="radio"]:checked + label:before {
+   background: #ef8700;
+}
+
+input.chkans {
+    background: white;
+    border: 2px solid rgb(94, 121, 255);
+    padding: 12px 14px;
+    margin-top: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(94, 121, 255);
+}
+
+input.chkans:hover, span#results a:hover {
+    opacity: 0.8;
+}
+
+.score {
+    border-color: rgb(11, 153, 7) !important;
+    color: rgb(11, 153, 7) !important;
+    width: 163px;
+}
+
+#results {
+    margin-left: -134px;
+	opacity:0;
+	transition:0.5s;
+}
+
+span.percent {
+    background: turquoise;
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 100px;
+    font-size: 29px;
+    margin: -20px;
+    position: relative;
+    color: white;
+    float: right;
+    text-align: center;
+}
+
+.start {
+    border-color: orange !important;
+    color: orange !important;
+    width: 98px;
+    padding: 7px 3px !important;
+}
+
+.hint a, .hint {
+color: rgb(118, 118, 118) !important;
+}
+
+span.green {
+color: rgb(16, 168, 12) !important;
+}
+
+span.chkans {
+color: red !important;
+padding-left: 11px;
+}
+
+h2 em {
+color: #3D3B3B !important;
+}
+
+
+
+h2.question {
+    clear: both;
+    font-weight: 600;
+    margin-top: 36px;
+}
+
+h2.question:first-child {
+    margin-top: 22px;
+}
+
+hr {
+border: 1px solid rgb(232, 232, 232) !important;
+}
+
+form hr {
+    clear: both;
+}
+
+span#results a {
+font:normal normal normal normal 13.3333330154419px/normal Arial;
+    padding: 12px 14px;
+    text-decoration: none;
+    color: turquoise;
+    font-weight: bold;
+    border: 2px solid turquoise;
+    border-radius: 5px;
+}
+
+.morequiz {
+    font: normal normal normal normal 13.3333330154419px/normal Arial;
+    padding: 12px 14px;
+    width: 80%;
+    text-decoration: none;
+    text-align: center;
+    color: #167ac6;
+    display: block;
+    font-weight: bold;
+    border: 2px solid #167AC6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.morequiz:hover {
+    opacity: 0.8;
+}
+
+
+.morequiz:hover {
+    color:#167ac6;
+}

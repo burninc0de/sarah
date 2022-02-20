@@ -1,0 +1,1112 @@
+/* Splash Start */
+
+.splash {
+    padding: 1em 0.5em;
+}
+
+	.splash tw-story {
+		/* background:  url(../img/splash.jpg) no-repeat; */
+		display: block;
+		background-size: cover;
+		width: 100%;
+	  background-position-x: center;
+		  text-align: center;
+	}
+
+
+	.splash tw-link {
+		display:inline-blocK;
+		padding:7px 25px;
+		border-radius:4px;
+		color: #00aabb;
+		border: 2px solid #00aabb;
+		}
+
+
+/* Core Elements*/
+
+/*error messages*/
+/* tw-backdrop {display:none;}
+ */
+
+	tw-story {
+		padding:0;
+	  background:white;
+	  line-height:initial;
+	}
+
+
+
+	tw-passage {
+	  margin-bottom: 3%;
+	}
+	
+	tw-expression {
+		font-family: sans-serif;
+		font-size: 84%;
+	}
+
+	.container tw-hook {
+		display: flex;
+		flex-direction: column;
+		margin: 1% 0;
+		width: 100%;
+	   /* border: 1px solid #525252; DEBUG*/
+	}
+
+tw-sidebar {
+    left: 15px !important;
+    top: 5px !important;
+    position: fixed;
+    z-index: 999;
+}
+  
+
+tw-sidebar tw-icon {
+
+    opacity: 1;
+    font-size: 90%;
+    display: inline;
+	    margin: 0 4px;
+}
+
+.undo:before {
+  	content: "<";
+	color:black;
+}
+
+.redo:before {
+    content: ">";
+	color:black;
+}
+
+.whitespace {
+  height:48px;
+  display:block;
+  width:100%;
+}
+
+.quiz .whitespace {
+    height: 57px;
+}
+
+.quiz span {
+    border-bottom: 2px dotted #939393;
+    padding-bottom: 5px;
+}
+
+
+	/* hide last message*/
+
+	tw-expression tw-hook:nth-last-of-type(2) .txt {
+	  display:none;
+
+	}
+	
+	tw-expression tw-hook:nth-last-of-type(2) {
+    display: none;
+}
+
+ .voc
+{display:none;}
+
+
+	/* hiding messages by number if needed
+
+	tw-hook:nth-of-type(3) {
+		display: none;
+	}
+	*/
+	
+/* SPEECH BUBBLES */
+
+	
+	.speech {
+    display: inline-block;
+    position: relative;
+    border-radius: .99em;
+    padding: 12px 28px 15px 27px;
+    transition: 0.5s;
+    max-width: 88%;
+    margin-bottom: 23px;
+}
+
+.speech.bubble-left {
+    background: lightgray;
+    left: 0;
+    margin-right: auto;
+	margin-left: 32px;
+}
+
+
+
+tw-hook.hideme {
+    opacity: 0;
+    position: absolute;
+    z-index: -999;
+}
+
+
+tw-link.hideme {color: transparent;}
+
+tw-link.hideme:after {content:"Continue ...";
+color:#666666;
+font-style:italic;
+}
+
+
+.seen:before {
+    content: "✔✓";
+    display: block;
+    font-size: 8pt;
+    color: #8f979a;
+    position: absolute;
+    bottom: -56px;
+    width: 140px;
+    left: 100%;
+    transition: 0.2s;
+}
+
+
+/* Avatar */
+
+.avatar {
+    transition: 0.5s;
+    position: absolute;
+    margin-left: -62px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: initial;
+    margin-right: 19px;
+    background:  url(../img/sarah.png) no-repeat;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    background-size: 102%;
+    bottom: 0;
+}
+
+
+
+/* ANSWER BUTTON */
+
+	.container, tw-columns {
+		padding: 2%;
+		margin-top: 1em;
+		/* margin-bottom: 5%; */
+	}
+
+
+	tw-columns {
+		color: white;
+		border-radius: 12px;
+
+	}
+
+	tw-column {
+		width: initial !important;
+	}
+
+
+	tw-column {
+		width:100% !IMPORTANT; /*DEBUG*/
+	}
+
+	/* answer link */
+tw-column tw-expression[type="macro"] tw-link {
+		transition: 0.5s;
+		left: 50%;
+		white-space: nowrap;
+		width: 290px;
+		overflow: hidden;
+		border-radius: 33px;
+		display: block;
+		padding: 15px 11px;
+		padding-right: 90px;
+		color: #525252;
+		  height: 50px;
+		font-size: 77%;
+		font-weight: normal;
+		padding-left: 24px;
+		z-index: 3;
+		position: fixed;
+		bottom: 34px;
+		transform: translate(-50%, 0);
+		-moz-box-shadow: inset 1px 1px 2px 1px #bbbbbb;
+		-webkit-box-shadow: inset 1px 1px 2px 1px #bbbbbb;
+		box-shadow: inset 1px 1px 2px 1px #bbbbbb;
+		background: #e5e5e5;
+	}
+
+	tw-column tw-link span {
+	/*text-overflow: ellipsis;*/
+	}
+
+	tw-column tw-link:before {
+		content: "";
+		position: absolute;
+		padding: 18px 3px 3px 16px;
+		display: block;
+		color: white;
+		font-size: 1.2em;
+		height: 80px;
+		background: #00aabb;
+		top: -10px;
+		width: 70px;
+		display: block;
+		right: -3px;
+		z-index: 999999;
+		overflow: visible;
+		background:  url(../img/send.png) no-repeat #00aabb center;
+		background-position-y: 22px;
+		background-position-x: 21px;
+		background-size: 25px;
+		cursor:pointer;
+	}
+
+	tw-column tw-link:hover:before, tw-column tw-link:focus:before,
+	tw-column tw-link:active:before	{
+  background:  url(../img/send.png) no-repeat #818181 center;
+		background-position-y: 22px;
+		background-position-x: 21px;
+		background-size: 25px;
+}
+
+	tw-link:hover, .enchantment-link:hover {
+		color: initial;
+	}
+
+
+
+
+#intro {
+    color: #616161;
+    text-align: center;
+    font-size: 86%;
+    font-style: italic;
+	margin-top: 44px;
+    margin-bottom: 22px;
+}
+
+.container tw-hook {
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0;
+    width: 100%;
+   /* border: 1px solid #525252; DEBUG*/
+}
+
+
+
+
+/* hiding messages
+
+tw-hook:nth-of-type(3) {
+    display: none;
+}
+*/
+
+
+
+
+.speech.bubble-right {
+    background: #00aabb;
+    right: 0;
+    margin-left: auto;
+}
+
+.left .txt {
+    color: black;
+	  transition:0.5s;
+}
+
+	.loading {
+		min-width: 67px;
+		margin-left: 13px;
+	  display:none;
+	  z-index:1;
+
+	}
+
+	.loading:before {
+		content: "Sarah schreibt ...";
+		font-size: 10pt;
+		color: #8f979a;
+		position: absolute;
+		top: 47px;
+		width: 140px;
+		left: -6px;
+		margin-bottom:20%;
+	}
+
+.multipart {display:none;}
+
+
+
+/* MENU */
+
+		#page-nav {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    min-height: 46px;
+    top: 0;
+
+    z-index: 9;
+}
+
+.whitebar {
+    background: #fffffff5;
+    height: 42px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+    z-index: 2;
+}
+
+	/* Hide Hamburger */
+	#page-nav label, #hamburger {
+	  display: none;
+	}
+
+	/* Menu Items */
+	#page-nav ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0; 
+	}
+	
+#page-nav ul li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px;
+    box-sizing: border-box;
+    color: black;
+    background: white;
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    margin: 0px 4px;
+    padding-right: 36px;
+}
+
+#page-nav ul li:nth-of-type(1) {
+    border-top: 1px solid #d9d9d9;;
+}
+
+	#page-nav ul li a {
+	  text-decoration: none;
+	}
+
+	/* [ON SMALL SCREENS] */
+
+	  /* Show Hamburger */
+	  #page-nav label {
+    display: block;
+    color: #000;
+    font-style: normal;
+    font-size: 1.4em;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    z-index: 999;
+    top: -6px;
+	  }
+	  
+	  
+	  #page-nav label:focus {
+    outline: none;
+}
+
+	  /* Break down menu items into vertical */
+	  #page-nav ul li {
+		display: block;
+	  }
+	  #page-nav ul li {
+	  }
+
+	  /* Toggle show/hide menu on checkbox click */
+	  #page-nav ul {
+		display: none;
+	  }
+	 
+/* ICONS */	 
+#page-nav li:before {
+	content: "";
+	width: 20px;
+    height: 20px;
+    background-size: contain;
+    display: block;
+    position: absolute;
+   right: 8px;
+}
+	  
+.about:before {
+    background: url(../img/icons8-about-24.png);
+}
+	  
+.nightmodetoggle:before {
+    background: url(../img/icons8-first-quarter-24.png);
+}
+		     
+.soundtoggle.on:before {
+    background: url(../img/icons8-speaker-24.png);
+}
+
+.soundtoggle.off:before {
+    background: url(../img/icons8-mute-24.png);
+}
+
+.autospeak:before {
+    background: url(../img/icons8-voice-recognition-30.png);
+}
+
+#page-nav input:checked ~ ul {
+    display: block;
+    text-align: right;
+    margin-top: 19px;
+    width: 210px;
+	right:7px;
+    margin-left: auto;
+ 
+	  }
+
+
+	#page-nav li a {
+		color: black !important;
+	}
+
+	#page-nav label[for="version"] {
+		text-align: left;
+		font-size: 60%;
+		position: relative;
+		display: inline-block;
+	}
+
+
+	.saveme tw-hook {
+		display: block !important;
+	  color: #00aabb;
+	}
+
+	#page-nav tw-link {
+		font-weight: initial;
+		color: black;
+	}
+
+
+
+
+/* LOADING ANIMATION FOR TYPING */ 
+
+	.three-balls-loading{
+		position: relative;
+		display: inline-block;
+		margin-bottom: 16px;
+	}
+
+	.three-balls-loading span,
+	.three-balls-loading span:nth-child(1),
+	.three-balls-loading span:nth-child(2){
+	  position: absolute;
+	  top: 0;
+	  width: 8px;
+	  height: 8px;
+	  background: #fff;
+	  border-radius: 50%;
+	  left: 0;
+	}
+	.three-balls-loading span{
+	  animation: bounce 1s infinite;
+	  -webkit-animation: bounce 1s infinite;
+	}
+	.three-balls-loading span:nth-child(1){
+	  left: 18px;
+	  animation: bounce 1s infinite;
+	  -webkit-animation: bounce 1s infinite;
+	  -webkit-animation-delay: .2s;
+	  animation-delay: .2s;
+	}
+	.three-balls-loading span:nth-child(2){
+	  left: 37px;
+	  animation: bounce 1s infinite;
+	  -webkit-animation: bounce 1s infinite;
+	  -webkit-animation-delay: .4s;
+	  animation-delay: .4s;
+	}
+
+	/* Animation */
+	@keyframes bounce {
+		0% {
+		top: 0;
+			-webkit-animation-timing-function: ease-in;
+		}
+		40% {}
+		50% {
+		top: 6px;
+			-webkit-animation-timing-function: ease-out;
+		width: 8px;
+		}
+		55% {
+		top: 10px; 
+			-webkit-animation-timing-function: ease-in;
+		width: 8px;
+		height: 8px
+	  }
+		65% {
+		top: 2px;
+			-webkit-animation-timing-function: ease-out;
+		width: 8px;
+		height: 11px
+	  }
+		95% {
+			top: 0;		
+			-webkit-animation-timing-function: ease-in;
+		}
+		100% {
+		top: 0;
+			-webkit-animation-timing-function: ease-in;
+		}
+	}
+	
+/* SIDEBAR */
+
+	tw-sidebar {
+		top: 2em;
+		left: 0;
+		width: 2em;
+	}
+
+	tw-sidebar tw-icon {
+		color:white;
+		opacity:1;
+		font-size:90%;
+	}
+	
+
+/* FOOTER */
+
+	footer {
+		background: #f6f6f6;
+		height: 256px;
+		width: 100%;
+		display: block;
+		position: fixed;
+		z-index: 2;
+		bottom: -137px;
+		border-top: 1px solid #d1d1d1;
+}
+
+
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+    position: absolute;
+    bottom: 110%;
+    margin-bottom: 5px;
+    margin-left: 0;
+    padding: 12px 13px;
+    min-width: 90px;
+    max-width: 250%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.txt span {
+    color: initial;
+    text-decoration: initial;
+    border-bottom: 2px dotted #929292;
+    padding: 0.25em 0;
+	white-space: nowrap;
+	z-index: 0;
+	line-height:2em;
+}
+
+
+	.splash h1 span, .badge h1 span  {
+    border-bottom: 4px dotted #929292;
+	}
+
+
+.right .txt span {
+    border-color: #1e5cab;
+	color:white;
+}
+
+.splash [data-tooltip]:before, .badge h1 [data-tooltip]:before {
+    position: absolute;
+    bottom: 110%;
+    margin-bottom: 5px;
+    margin-left: -4%;
+    padding: 18px 13px;
+    min-width: 100%;
+    max-width: 100%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.splash [data-tooltip]:after, .badge h1 [data-tooltip]:after {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+    font-weight: normal;
+}
+
+
+/* hack to hide speech message and only show speaker icon */
+
+tw-expression tw-hook:nth-last-of-type(2) .vol {
+	display:none;
+}
+
+.vol:before {
+    content: "";
+    font-size: 16px;
+    font-size: 1rem;
+    letter-spacing: normal;
+    color: #000;
+    position: absolute;
+    left: -37px;
+    width: auto;
+    bottom: 17px;
+    color: white;
+    text-shadow: 0 0 0 #6f6f6f;
+    display: block;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid #bfbfbf;
+    width: 32px;
+    background: white  url(../img/icons8-speaker-24.png) no-repeat center;
+    background-size: contain;
+    background-size: 68%;
+  	opacity:0.9;
+    height: 32px;
+    box-shadow: 1px 1px 3px #bfbfbf;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.vol {
+ font-size: 1px;
+    letter-spacing: -1px;
+    color: transparent;
+  cursor:pointer;
+}
+
+.vol tw-expression {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 900px) {
+  body, footer {
+
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+
+}
+
+#page-nav {
+
+    max-width:800px;
+    left: 1px;
+    margin:0 auto !important;
+    width: 80%;
+}
+
+footer {
+    background:white;
+    border:initial;
+}
+
+body tw-sidebar {
+
+    left: 50% !important;
+    margin-left:-400px;
+}
+}
+
+/* NIGHT STYLES*/
+
+
+.night tw-story, body.night, .night footer, .night .whitebar, .night #page-nav ul li {
+    background: black;
+}
+
+.night .undo:before, .night .redo:before, .night #page-nav label, .night #page-nav tw-link, .night #intro, .night #page-nav ul li, .speech.bubble-right, .night .credits, .night .credits h1, .night .credits h4, .end h1, .night .quiz p, .night .badge h1, .night .badge .message, .night .end h1 {
+    color: white;
+}
+
+.night .credits a, .night .end span {
+color:orange;}
+
+.night tw-icon, .night tw-passage, tw-columns {
+    color:black;
+}
+
+.night footer {
+    border-color: #414141;
+}
+
+
+.night [data-tooltip]:before  {
+    background:#f7f7f7;
+    color:black;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.night [data-tooltip]:after {
+   border-top: 5px solid #f7f7f7;
+   
+}
+
+body.night li:before {
+    filter: brightness(0) invert(1);
+}
+
+#page-nav label.score {
+    color: #f2a634;
+    z-index: 999;
+    top: 1px;
+    display: inline-block;
+    left: 70px;
+    width: 30px;
+    font-size: 1em;
+    vertical-align: middle;
+    height: 30px;
+    font-weight: bold;
+  /*   display: none; */
+}
+
+.score:after {
+    content: "";
+    bottom: 0;
+    width: 20px;
+    position: absolute;
+    left: 33px;
+    height: 20px;
+    background: url(../img/coins.png) no-repeat;
+    display: block !important;
+    background-size: cover;
+}
+
+.medalcont {
+    border-radius: 7px;
+    display: block;
+    width: 182px;
+    left: 144px;
+    display: block;
+    z-index: 9;
+    top: 4px;
+    height: 31px;
+}
+
+#page-nav label.medal {
+    color: #f2a634;
+    z-index: 999;
+    top: 4px;
+    left: 8px;
+    font-size: 1em;
+    vertical-align: middle;
+    font-weight: bold;
+    width: 0px;
+/* 	max-width:163px; */
+    position: absolute;
+    height: 20px;
+    background: url(../img/icons8-star-filled-48.png) repeat-x;
+    display: block;
+    background-size: 18px;
+}
+
+/* QUIZ STUFF */ 
+
+.quiz label, .quiz {
+    min-width: 40%;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: -100px;
+}
+
+.quiz p {
+
+  margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.quiz label {
+    display: block;
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    color: black;
+    font-size: 80%;
+	border-radius: 68px;
+}
+
+.quiz label:hover{
+    background:#e2e2e2;
+    cursor: pointer;
+}
+.quiz .green{
+    background:#7f7;
+    border:1px solid #0c0;
+}
+.quiz .green:hover{
+    background:#4f4;
+}
+.quiz .red{
+    background:#f77;
+    border:1px solid #c00;
+}
+.red:hover{
+    background:#f44;
+}
+
+.quiz p {
+color:black;
+}
+
+#continue {
+    text-align: center;
+    border: 2px solid #15b6ea;
+    color: #15b6ea;
+    font-weight: bold;
+    margin: 22px auto;
+    padding: 10px 0;
+    width: 60%;
+    cursor: pointer;
+    font-family: arial;
+    border-radius: 8px;
+}
+
+#continue span {
+    color: #f2a634;
+    font-weight: bold;
+}
+
+#sorry {
+    text-align: center;
+    border: 0px solid #15b6ea;
+    color: #1e1e1e;
+    font-weight: normal;
+    margin: 22px auto;
+    font-family:arial;
+    padding: 10px 0;
+    width: 60%;
+    cursor:pointer;
+    border-radius: 8px;
+	display:none;
+}
+
+#sorry span, .message [data-tooltip] {
+	border-bottom: 2px dotted #929292;
+}
+
+/* disabling Harlowe transition */
+[data-t8n^=dissolve].transition-in {
+	-webkit-animation:appear 0ms step-start;
+	animation:appear 0ms step-start;
+}
+
+
+
+/* CREDITS */
+
+.credits {
+    font-size: 0.8em;
+    color: black;
+    margin-top: 22px;
+    font-family: Arial;
+	padding: 1.3em;
+}
+
+.credits h1 {
+    font-family: arial;
+    font-size: 1.3em;
+	    margin-bottom: 19px;
+}
+
+.vernum {
+    float:right;
+    font-size: 50%;
+}
+
+
+br {display:none;}
+
+
+.debug {
+	display:none;
+	color: red;
+    font-size: 100%;
+    position: fixed;
+    top: 5%;
+	background:lightgrey;
+	padding:12px;
+    left: 3%;
+    z-index: 999999;
+}
+
+.end  {
+	display:none;
+	text-align:center;
+    margin-bottom: 22px;
+}
+
+.end h1 {
+    color: black;
+    font-size: 200%;
+    clear: both;
+    margin-top: -33px;
+}
+
+.end span tw-link {
+	font-size:1em;
+	display:none;
+	font-family:Arial;
+	color:#00aabb;
+}
+
+
+/* FINALSCORE */
+
+.badge {
+    margin-top: 0.8em;
+    text-align: center;
+	
+}
+
+.badge h1 {
+color:black;
+font-size:1.5em;
+margin-bottom:0.8em;
+}
+
+.bigscore {
+    color: #ffffff;
+    border: 2px solid;
+    width: 61px;
+    margin: 0 auto;
+    font-size: 1.7em;
+    height: 61px;
+    border-radius: 50%;
+    background: #f2a634;
+    border: 2px solid #f6e498;
+		margin-bottom:0.5em;
+}
+
+.message {
+    color: black;
+    font-size: 0.8em;
+    font-family: arial;
+    text-align: center;
+	line-height:1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.sb {
+cursor:pointer;
+font-family:arial;
+    display: inline-block;
+    border: 2px solid red;
+    padding: 0.7em;
+    font-size: 0.8em;
+    border-radius: 8px;
+        margin: 0.8em 0.5em;
+	color: initial;
+    text-decoration: none;
+}
+
+.sb.fb {
+color:#3b5998;
+border-color:#3b5998;
+}
+
+.sb.tw {
+color:#1DA1F2;
+border-color:#1DA1F2;
+}
+
