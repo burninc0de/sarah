@@ -1,0 +1,248 @@
+:: Quiz 1
+
+(doesn't exist because it correlates to first voocblock)
+
+:: Quiz 2
+<div class="quiz" style="display:none;">
+<script>
+var cost = 2;
+answers = ["A","B","C"];
+$('.quiz br').remove();
+</script>
+   <p>Wie ist das Wetter?</p>
+        <label for="p1"><input type="radio" value="A"> Es regnet.</label>
+        <label for="p1"><input type="radio" value="B"> Es schneit.</label>
+        <label for="p1"><input type="radio" value="C"> Die Sonne scheint.</label>
+        <p>Warum kann Sarah nicht schlafen?</p>
+        <label for="p2"><input type="radio" value="A"> Sie hat Hunger.</label>
+        <label for="p2"><input type="radio" value="B"> Es ist sehr laut.</label>
+        <label for="p2"><input type="radio" value="C"> Es ist sehr leise.</label>
+        <p>Hat Sarah Kopfhörer?</p>
+        <label for="p3"><input type="radio" value="A">  Ja, aber sie sind nicht gut.</label>
+        <label for="p3"><input type="radio" value="B"> Nein.</label>
+        <label for="p3"><input type="radio" value="C"> Ja, aber sie sind kaputt.</label>
+(display: "Quiz_JQ")
+<div class="whitespace"></div></div>
+
+:: Quiz 3
+<div class="quiz" style="display:none;">
+<script>
+var cost = 3;
+answers = ["A","B","A"];
+$('.quiz br').remove();
+</script>
+   <p>Frodo ist ...</p>
+        <label for="p1"><input type="radio" value="A"> Sarahs Hund</label>
+        <label for="p1"><input type="radio" value="B"> Sarahs Freund.</label>
+        <label for="p1"><input type="radio" value="C"> Sarahs Vater.</label>
+	<p>Wie alt ist Frodo?</p>
+        <label for="p2"><input type="radio" value="A"> 10</label>
+        <label for="p2"><input type="radio" value="B"> 11</label>
+        <label for="p2"><input type="radio" value="C"> 12</label>
+	<p>Wer lebt länger?</p>
+        <label for="p3"><input type="radio" value="A"> kleine Hunde</label>
+        <label for="p3"><input type="radio" value="B"> mittelgroße Hunde</label>
+        <label for="p3"><input type="radio" value="C"> große Hunde</label>
+(display: "Quiz_JQ")
+<div class="whitespace"></div></div>
+
+
+:: Quiz 4
+<div class="quiz" style="display:none;">
+<script>
+var cost = 4;
+answers = ["C","A","B", "C"];
+$('.quiz br').remove();
+</script>
+   <p>Die Nachrichten sprechen von einem ... des Jahrhunderts.</p>
+        <label for="p1"><input type="radio" value="A"> Donner</label>
+        <label for="p1"><input type="radio" value="B"> Gewitter</label>
+        <label for="p1"><input type="radio" value="C"> Sturm</label>
+	<p>Ist Sarah allein zu Hause?</p>
+        <label for="p2"><input type="radio" value="A"> ja</label>
+        <label for="p2"><input type="radio" value="B"> nein</label>
+	<p>Wo sind Sarahs Eltern?</p>
+        <label for="p3"><input type="radio" value="A"> zu Hause</label>
+        <label for="p3"><input type="radio" value="B"> im Urlaub</label>
+        <label for="p3"><input type="radio" value="C"> im Garten</label>
+	<p>Sie sind auf ...</p>
+        <label for="p4"><input type="radio" value="A"> Sizilien</label>
+		<label for="p4"><input type="radio" value="B"> Korsika</label>
+        <label for="p4"><input type="radio" value="C"> Mallorca</label>
+(display: "Quiz_JQ")
+<div class="whitespace"></div></div>
+
+
+:: Quiz 5
+<div class="quiz" style="display:none;">
+<script>
+var cost = 3;
+answers = ["C","C","B"];
+$('.quiz br').remove();
+</script>
+   <p>Wo ist Sarahs Mülltone jetzt?</p>
+        <label for="p1"><input type="radio" value="A"> in der Garage</label>
+        <label for="p1"><input type="radio" value="B"> im Haus</label>
+        <label for="p1"><input type="radio" value="C"> in einem Baum</label>
+	<p>Was ist verwunderlich?</p>
+        <label for="p2"><input type="radio" value="A"> Die Kopfhörer funktionieren.</label>
+        <label for="p2"><input type="radio" value="B"> Sarah kann nicht schlafen.</label>
+		<label for="p2"><input type="radio" value="C"> Das Internet funktioniert.</label>
+	<p>Wo ist der Blitz eingeschlagen?</p>
+        <label for="p3"><input type="radio" value="A"> in Sarahs Haus</label>
+        <label for="p3"><input type="radio" value="B"> in das Haus der Nachbarn</label>
+        <label for="p3"><input type="radio" value="C"> in die Weide im Garten</label>
+(display: "Quiz_JQ")
+<div class="whitespace"></div></div>
+
+
+:: Quiz 6
+<div class="quiz" style="display:none;">
+<script>
+var cost = 5;
+answers = ["A","B","C","B","B"];
+$('.quiz br').remove();
+</script>
+   <p>Sarahs Nachbar steht ...</p>
+        <label for="p1"><input type="radio" value="A"> am Fenster</label>
+        <label for="p1"><input type="radio" value="B"> im Garten</label>
+        <label for="p1"><input type="radio" value="C"> auf der Straße</label>
+	<p>Er <span data-tooltip="wears">trägt</span> ...</p>
+        <label for="p2"><input type="radio" value="A"> ein T-Shirt</label>
+        <label for="p2"><input type="radio" value="B"> einen Schlafanzug</label>
+		<label for="p2"><input type="radio" value="C"> einen Pullover</label>
+	<p>Seine Frau ...</p>
+        <label for="p3"><input type="radio" value="A"> steht neben ihm</label>
+        <label for="p3"><input type="radio" value="B"> schläft</label>
+        <label for="p3"><input type="radio" value="C"> ist gestorben</label>
+	<p>Er wohnt ... in dem Haus.</p>
+        <label for="p4"><input type="radio" value="A"> mit seiner Frau</label>
+        <label for="p4"><input type="radio" value="B"> ganz alleine</label>
+        <label for="p4"><input type="radio" value="C"> mit seinem Hund</label>
+	<p>Wo ist Frodo?</p>
+        <label for="p5"><input type="radio" value="A"> Er ist im Garten.</label>
+        <label for="p5"><input type="radio" value="B"> Er ist verschwunden.</label>
+        <label for="p5"><input type="radio" value="C"> Er ist im Bett.</label>
+(display: "Quiz_JQ")
+<div class="whitespace"></div></div
+
+
+:: Quiz 7
+<div class="quiz" style="display:none;">
+<script>
+var cost = 5;
+answers = ["A","B","C","A","B"];
+$('.quiz br').remove();
+</script>
+  <p>Wo hat Sarah nach Frodo gesucht?</p>
+        <label for="p1"><input type="radio" value="A"> im Wohnzimmer, in der Küche und im Badezimmer</label>
+        <label for="p1"><input type="radio" value="B"> im Wohnzimmer, im Garten und im Garten</label>
+        <label for="p1"><input type="radio" value="C"> im Wohnzimmer, auf der Straße und im Badezimmer</label>
+	<p>Hat sie ihn gefunden?</p>
+        <label for="p2"><input type="radio" value="A"> Ja</label>
+        <label for="p2"><input type="radio" value="B"> Nein</label>
+	<p>Wo ist Sarahs Nachbar?</p>
+        <label for="p3"><input type="radio" value="A"> Er steht auf der Straße.</label>
+        <label for="p3"><input type="radio" value="B"> Er sitzt im Garten.</label>
+        <label for="p3"><input type="radio" value="C"> Er steht auf der Veranda.</label>
+	<p>Was macht er dort?</p>
+        <label for="p4"><input type="radio" value="A"> Er gießt die Blumen.</label>
+        <label for="p4"><input type="radio" value="B"> Er schaut in die Nacht.</label>
+        <label for="p4"><input type="radio" value="C"> Er schläft.</label>
+	<p>Was darf man <span data-tooltip="according to">laut</span> Sarah nicht mit Schlafwandlern machen?</p>
+        <label for="p5"><input type="radio" value="A"> mit ihnen sprechen</label>
+        <label for="p5"><input type="radio" value="B"> sie aufwecken</label>
+        <label for="p5"><input type="radio" value="C"> sie anschauen</label>
+(display: "Quiz_JQ")
+<div class="whitespace"></div></div>
+
+:: Quiz 8
+<div class="quiz" style="display:none;">
+<script>
+var cost = 4;
+answers = ["B","A","A","A","C"];
+$('.quiz br').remove();
+</script>
+  <p>Wo ist der Nachbar?</p>
+        <label for="p1"><input type="radio" value="A"> am Fenster</label>
+        <label for="p1"><input type="radio" value="B"> auf der Veranda</label>
+        <label for="p1"><input type="radio" value="C"> auf der Straße</label>
+	<p>Was nimmt er?</p>
+        <label for="p2"><input type="radio" value="A"> eine Schaufel</label>
+        <label for="p2"><input type="radio" value="B"> eine Mülltonne</label>
+		<label for="p2"><input type="radio" value="C"> einen Schlafanzug</label>
+	<p>Wo gräbt er ein Loch?</p>
+        <label for="p3"><input type="radio" value="A"> im Blumenbeet</label>
+        <label for="p3"><input type="radio" value="B"> unter einem Baum</label>
+        <label for="p3"><input type="radio" value="C"> neben der Straße</label>
+	<p>Er legt sich in das Loch und füllt es ...</p>
+        <label for="p4"><input type="radio" value="A"> mit Erde.</label>
+        <label for="p4"><input type="radio" value="B"> mit Müll.</label>
+        <label for="p4"><input type="radio" value="C"> mit Regen.</label>
+	<p>Was ist am Ende nur noch sichtbar?</p>
+        <label for="p5"><input type="radio" value="A"> seine Stirn und die Füße</label>
+        <label for="p5"><input type="radio" value="B"> seine Arme und die Finger</label>
+        <label for="p5"><input type="radio" value="C"> seine Stirn und die Finger</label>
+(display: "Quiz_JQ")
+<div class="whitespace"></div></div>
+
+
+:: Quiz 9
+<div class="quiz" style="display:none;">
+<script>
+var cost = 4;
+answers = ["A","B","C","A","B"];
+$('.quiz br').remove();
+</script>
+  <p>Was macht Frodo?</p>
+        <label for="p1"><input type="radio" value="A"> Er gräbt in dem Loch.</label>
+        <label for="p1"><input type="radio" value="B"> Er hängt in einem Baum.</label>
+        <label for="p1"><input type="radio" value="C"> Er trinkt Wasser.</label>
+	<p>Frodo und der Nachbar gehen ...</p>
+        <label for="p2"><input type="radio" value="A"> ins Wohnzimmer</label>
+        <label for="p2"><input type="radio" value="B"> in die Küche.</label>
+		<label for="p2"><input type="radio" value="C"> ins Badezimmer</label>
+	<p>Sarahs Nachbar trinkt ein Glas ...</p>
+        <label for="p3"><input type="radio" value="A"> Bier</label>
+        <label for="p3"><input type="radio" value="B"> Wasser</label>
+        <label for="p3"><input type="radio" value="C"> Milch</label>
+	<p>Was gibt er Frodo?</p>
+        <label for="p4"><input type="radio" value="A"> eine Wurst</label>
+        <label for="p4"><input type="radio" value="B"> Milch</label>
+        <label for="p4"><input type="radio" value="C"> Käse</label>
+	<p>Dann macht er das Licht aus und Frodo ...</p>
+        <label for="p5"><input type="radio" value="A"> gräbt im Garten</label>
+        <label for="p5"><input type="radio" value="B"> kommt zurück zu Sarah</label>
+        <label for="p5"><input type="radio" value="C"> geht in den Keller</label>
+(display: "Quiz_JQ")
+<div class="whitespace"></div></div>
+
+:: Quiz X
+<div class="quiz" style="display:none;">
+<script>
+var cost = 4;
+answers = ["C","C","B"];
+$('.quiz br').remove();
+</script>
+  <p>XXX</p>
+        <label for="p1"><input type="radio" value="A"> XXX</label>
+        <label for="p1"><input type="radio" value="B"> XXX</label>
+        <label for="p1"><input type="radio" value="C"> XXX</label>
+	<p>WXXX</p>
+        <label for="p2"><input type="radio" value="A"> XXX.</label>
+        <label for="p2"><input type="radio" value="B"> XXX.</label>
+		<label for="p2"><input type="radio" value="C"> XXX.</label>
+	<p>XXX</p>
+        <label for="p3"><input type="radio" value="A"> XXX</label>
+        <label for="p3"><input type="radio" value="B"> XXX</label>
+        <label for="p3"><input type="radio" value="C"> XXX</label>
+	<p>XXX</p>
+        <label for="p4"><input type="radio" value="A"> XXX</label>
+        <label for="p4"><input type="radio" value="B"> XXX</label>
+        <label for="p4"><input type="radio" value="C"> XXX</label>
+	<p>XXX</p>
+        <label for="p5"><input type="radio" value="A"> XXX</label>
+        <label for="p5"><input type="radio" value="B"> XXX</label>
+        <label for="p5"><input type="radio" value="C"> XXX</label>
+(display: "Quiz_JQ")
+<div class="whitespace"></div></div>

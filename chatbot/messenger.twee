@@ -1,0 +1,131 @@
+:: Messenger {"position":"797,123","size":"100,100"}
+
+
+<div class="container"><div id="intro_"></div>
+(for: each _response, ...$responses)[
+		(if: $right)[
+		<div class='left speech bubble-left'>
+			<div class='avatar'></div>
+			<div class="loading"><div class="three-balls-loading"><span></span><span></span><span></span></div></div>
+			<span class="vol" onclick="">_response</span> <span class="txt"> _response</span>	
+		</div>
+		
+		
+		(set: $right to false)
+			
+			] (else:) [
+			<div class='right speech bubble-right'><span class="vol" onclick="speak($.trim($($(this)).text().replace(new RegExp(ranges.join('|'), 'g'), '')), 'male');">_response</span><span class="txt">_response</span></div>
+			(set: $right to true)
+		]
+	]</div>
+	
+<link rel="stylesheet" type="text/css" href="css/typing.css">
+<script>
+var str = "{_response}";
+
+if (hesitate == null){
+  var hesitate = 0 + Math.floor(Math.random() * 1);
+}
+
+
+
+//$('tw-column tw-link:contains("xxx")').addClass("hideme");
+
+
+//counting last RIGHT message
+	//performance tweak
+		//var rlength = $.trim($('tw-expression tw-hook:nth-last-of-type(3) .txt').text()).length;
+		var rlength = 10;
+
+// counting last LEFT message
+	//performance tweak
+		var length = $.trim($('tw-expression tw-hook:nth-last-of-type(2) .txt').text()).length;
+	
+		
+
+//var lethimread = 1 + Math.floor((Math.random() * 150) + 500) + (rlength*25);
+var lethimread = 1;
+
+//var number = 1 + Math.floor(Math.random() * 1) + length;
+var number = 1;
+
+$('tw-expression tw-hook:nth-last-of-type(3) .speech').delay(100).fadeIn();
+
+
+ 
+// Remove TYPING message
+// scroll to typing
+
+$("html, body").delay(100).animate({ scrollTop: $(document).height() }, "slow");
+window.setTimeout(function(){$('tw-column tw-link span').addClass("typing");}, lethimread+number+11800);
+$('.loading').delay(length*8+100).fadeOut();
+// show LEFT text message
+$('tw-expression tw-hook:nth-last-of-type(2) .txt').delay(length*8+500).fadeIn();
+
+  
+// seen checkmarks
+window.setTimeout(function(){$("tw-expression tw-hook:nth-last-of-type(3) .txt").addClass("seen");}, lethimread/2-number);
+
+// wrap span around answer
+$('tw-column tw-link').wrapInner('<span></span>');
+
+// show button
+console.log(length*10+500);
+$("tw-column").delay(length*8+500).fadeIn();
+$('tw-column tw-link span').delay(length*8).fadeTo("slow", 1);
+
+ 
+ $('tw-link').click(function(){
+    // Clear the timeout
+   // clearTimeout(timer);
+});
+
+
+//HIDE PLACEHOLDER 
+$('.speech .txt tw-expression:contains("XXX")').parent().parent().parent().remove();
+
+$('tw-expression tw-hook:nth-last-of-type(2)').delay(lethimread).fadeIn()
+
+$('tw-expression tw-hook:nth-last-of-type(2)').delay(lethimread).css("display", "block !important");
+
+$('.avatar').delay(number+400+hesitate).fadeIn().css("vertical-align", "bottom");
+
+  
+    $('.multipart').delay(number+400+hesitate).fadeIn();
+	
+		
+
+
+
+
+
+
+
+//var readmeleft = $.trim($('tw-expression tw-hook:nth-last-of-type(2) .txt').text())
+
+//var readmeright = $.trim($('tw-expression tw-hook:nth-last-of-type(3) .txt').text())
+
+
+// DISABLE AUTOSAVE
+//window.localStorage.clear();
+sessionStorage.removeItem("Saved Session");
+
+
+//Emoji Remover
+	var ranges = [
+  
+	  '\ud83c[\udf00-\udfff]',
+	  '\ud83d[\udc00-\ude4f]',
+	  '\ud83d[\ude80-\udeff]',
+	  '\ud83e[\ud000-\udfff]',
+	  '[\u2000-\u3300]',
+	  '\u00a9|\u00ae|'
+
+	];
+
+
+
+  //scroll to end of message
+	$("html, body").delay(length*8+500).animate({ scrollTop: $(document).height() }, "slow");
+
+</script></div><div class="whitespace"></div>

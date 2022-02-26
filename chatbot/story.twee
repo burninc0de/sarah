@@ -1,0 +1,616 @@
+:: Ja, klar. Was geht?
+{(set: $responses to it + (a: "<b>Ja, klar</b>. <b>Was geht</b>?"))(set: $responses to it + (a: "<b>Ich</b> <b>kann</b> <b>nicht</b> <b>schlafen</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Warum nicht?]]
+
+
+:: Warum nicht?
+{(set: $responses to it + (a: "<b>Warum</b> nicht?"))(set: $responses to it + (a: "Ist <b>bei dir</b> <b>kein</b> <b>Gewitter</b>?"))(display: "Messenger")}
+|=
+
+=|
+
+[[Noch nicht. Aber ich höre das Donnern in der Ferne.]]
+
+
+:: Noch nicht. Aber ich höre das Donnern in der Ferne.
+{(set: $responses to it + (a: "<b>Noch nicht</b>. Aber ich <b>höre</b> das <b>Donnern</b> in der <b>Ferne</b>."))(set: $responses to it + (a: "<b>Es regnet</b> <b>hier</b> <b>schon</b> <b>seit Stunden</b>. <b>Wie</b> eine <b>verdammte</b> <b>Sintflut</b>! <b>Wo</b> ist <b>meine</b> <b>Arche</b>?"))(display: "Messenger")}
+|=
+
+=|
+
+[[Haha! 🤣]]
+
+
+:: Haha! 🤣 
+{(set: $responses to it + (a: "Haha! 🤣"))(set: $responses to it + (a: "Du <b>lachst</b>. Aber es ist total <b>laut</b>! Der Wind <b>heult</b>. Der Regen <b>trommelt</b> auf mein <b>Dach</b>. Und die <b>Äste</b> der <b>alten</b> <b>Weide</b> im <b>Garten</b> <b>schlagen an</b> meine <b>Fenster</b> wie <b>Peitschen</b>. Es ist <b>unmöglich</b>, <b>so</b> zu <b>schlafen</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Hast du keine Kopfhörer?]]
+
+
+:: Hast du keine Kopfhörer?
+{(set: $responses to (a: "Hast du keine <b>Kopfhörer</b>?"))
+(set: $responses to it + (a: "Nein. <b>Das heißt</b> ... ja, aber sie sind <b>kaputt</b>."))
+(set: $vocab to 2)
+(display: "Messenger")
+(display: "Quiz 2")
+}
+|=
+
+=|
+
+[[Verstanden.]]
+
+
+:: Verstanden.
+{(set: $responses to it + (a: "<b>Verstanden</b>."))(set: $responses to it + (a: "Oh mein <b>Gott</b>!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Was ist??]]
+
+
+:: Was ist??
+{(set: $responses to it + (a: "<b>Was ist</b>??"))(set: $responses to it + (a: "XXX"))(display: "Messenger")}
+|=
+
+=|
+
+[[Sarah?]]
+
+
+:: Sarah?
+{(set: $responses to it + (a: "Sarah?"))(set: $responses to it + (a: "Es war nur ein <b>Blitz</b>. Aber <b>was für ein</b> Blitz! Wie <b>tausend</b> Papparazzi! <b>Ich verstehe nicht</b>, wie Frodo bei dem Gewitter schlafen kann."))(display: "Messenger")}
+|=
+
+=|
+
+[[Schläft er in deinem Bett?]]
+
+
+:: Schläft er in deinem Bett?
+{(set: $responses to it + (a: "Schläft er in <b>deinem</b> <b>Bett</b>?"))(set: $responses to it + (a: "Bist du <b>verrückt</b>? Er ist <b>viel zu</b> <b>schwer</b>! <b>Außerdem</b> hat er <b>Mundgeruch</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Er ist ziemlich alt, oder?]]
+
+
+:: Er ist ziemlich alt, oder?
+{(set: $responses to it + (a: "Er ist <b>ziemlich</b> alt, <b>oder</b>?"))(set: $responses to it + (a: "Frodo ist <b>elf</b> <b>Jahre</b> alt. In <b>Menschenjahren</b> <b>wäre</b> er circa 82!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Ein richtig alter Knacker.]]
+
+
+:: Ein richtig alter Knacker.
+{(set: $responses to (a: "Ein <b>richtig</b> <b>alter Knacker</b>."))
+(set: $responses to it + (a: "<b>Du sagst es</b>! <b>Viel Zeit</b> hat er <b>nicht mehr</b>. Es ist <b>eigentlich</b> unfair. Er ist so <b>groß</b>, aber kleine <b>Hunde</b> <b>leben</b> viel <b>länger</b>."))
+(set: $vocab to 3)
+(display: "Messenger")
+(display: "Quiz 3")
+}
+|=
+
+=|
+
+[[Hast du die Nachrichten gesehen?]]
+
+
+:: Hast du die Nachrichten gesehen?
+{(set: $responses to it + (a: "Hast du die <b>Nachrichten</b> <b>gesehen</b>?"))(set: $responses to it + (a: "Nein. <b>Wieso</b>?"))(display: "Messenger")}
+|=
+
+=|
+
+[[Das Gewitter hat Bäume entwurzelt und Strommasten umgelegt. Sie sprechen von einem Sturm des Jahrhunderts!]]
+
+
+:: Das Gewitter hat Bäume entwurzelt und Strommasten umgelegt. Sie sprechen von einem Sturm des Jahrhunderts!
+{(set: $responses to it + (a: "Das Gewitter hat <b>Bäume</b> <b>entwurzelt</b> und <b>Strommasten</b> <b>umgelegt</b>. Sie <b>sprechen</b> <b>von</b> einem <b>Sturm</b> <b>des Jahrhunderts</b>!"))(set: $responses to it + (a: "<b>Wie gesagt</b>. Es ist das absolute Chaos hier."))(display: "Messenger")}
+|=
+
+=|
+
+[[Bist du allein zu Hause?]]
+
+
+:: Bist du allein zu Hause?
+{(set: $responses to (a: "Bist du <b>allein</b> <b>zu Hause</b>?"))(set: $responses to it + (a: "Ja. Meine <b>Eltern</b> sind <b>im Urlaub</b>. In einer <b>Hotelburg</b> <b>auf</b> Mallorca. So <b>peinlich</b>."))
+(set: $vocab to 4)
+(display: "Messenger")
+(display: "Quiz 4")
+}
+|=
+
+=|
+
+[[Ich war noch nie auf Mallorca. Es ist schön dort, habe ich gehört.]]
+
+
+:: Ich war noch nie auf Mallorca. Es ist schön dort, habe ich gehört.
+{(set: $responses to it + (a: "<b>Ich war noch nie</b> auf Mallorca. Es ist <b>schön</b> <b>dort</b>, habe ich <b>gehört</b>."))(set: $responses to it + (a: "Ja, <b>keine Ahnung</b>. <b>Was auch immer</b>. Oh, verdammt!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Was ist denn jetzt?]]
+
+
+:: Was ist denn jetzt?
+{(set: $responses to it + (a: "Was ist denn <b>jetzt</b>?"))(set: $responses to it + (a: "<b>Unsere</b> <b>Mülltonne</b> ist <b>gerade</b> <b>auf</b> die <b>Straße</b> <b>geflogen</b>! Oh ok. Jetzt <b>hängt</b> sie in einem Baum."))(display: "Messenger")}
+|=
+
+=|
+
+[[Altpapier oder Restmüll?]]
+
+
+:: Altpapier oder Restmüll?
+{(set: $responses to it + (a: "<b>Altpapier</b> oder <b>Restmüll</b>?"))(set: $responses to it + (a: "<b>Häh</b>? Keine Ahnung, Mann! Aber <b>weißt du was</b>?"))(display: "Messenger")}
+|=
+
+=|
+
+[[Was?]]
+
+
+:: Was?
+{(set: $responses to it + (a: "Was?"))(set: $responses to it + (a: "Ich bin <b>beeindruckt</b>, dass das Internet noch <b>funktioniert</b> <b>bei</b> dem <b>Mistwetter</b>."))
+(display: "Messenger")
+}
+|=
+
+=|
+
+[[Ja. Verwunderlich, eigentlich.]]
+
+
+:: Ja. Verwunderlich, eigentlich.
+{(set: $responses to it + (a: "Ja. <b>Verwunderlich</b>, eigentlich."))(set: $responses to it + (a: "<b>Heiliger Bimbam</b>!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Was jetzt?]]
+
+
+:: Was jetzt?
+{(set: $responses to it + (a: "<b>Was jetzt</b>?"))(set: $responses to it + (a: "XXX"))(display: "Messenger")}
+|=
+
+=|
+
+[[Sarah??]]
+
+
+:: Sarah??
+{(set: $responses to it + (a: "Sarah??"))(set: $responses to it + (a: "Du ... ich ..."))(display: "Messenger")}
+|=
+
+=|
+
+[[Ja?]]
+
+
+:: Ja?
+{(set: $responses to it + (a: "Ja?"))(set: $responses to it + (a: "Ich glaube, ein Blitz ist gerade in das Haus <b>der</b> <b>Nachbarn</b> <b>eingeschlagen</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Was? Im Ernst? Ist alles in Ordnung?]]
+
+
+:: Was? Im Ernst? Ist alles in Ordnung?
+{(set: $responses to (a: "Was? <b>Im Ernst</b>? Ist alles <b>in Ordnung</b>?"))(set: $responses to it + (a: "<b>Ich weiß nicht</b>."))
+(set: $vocab to "5")
+(display: "Messenger")
+(display: "Quiz 5")}
+|=
+
+=|
+
+[[Was bedeutet das?]]
+
+
+:: Was bedeutet das?
+{(set: $responses to it + (a: "<b>Was bedeutet das</b>?"))(set: $responses to it + (a: "Keine Ahnung! Es hat laut <b>geknallt</b>. Wie ein <b>Schuss</b> aus einer Pistole! Meine <b>Fensterscheiben</b> haben <b>gezittert</b>. Und alle <b>Lichter</b> haben <b>geflackert</b>. <b>Sogar</b> Frodo ist <b>aufgewacht</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Und deine Nachbarn?]]
+
+
+:: Und deine Nachbarn?
+{(set: $responses to it + (a: "Und deine Nachbarn?"))(set: $responses to it + (a: "Oh, <b>warte</b>, <b>da</b> ist mein Nachbar, am Fenster!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Ist er okay?]]
+
+
+:: Ist er okay?
+{(set: $responses to it + (a: "Ist er okay?"))(set: $responses to it + (a: "Ich weiß nicht. Er steht im <b>Schlafanzug</b> und <b>schaut</b> in die <b>Nacht</b> wie ein <b>Geist</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Gruselig.]]
+
+
+:: Gruselig.
+{(set: $responses to it + (a: "<b>Gruselig</b>."))(set: $responses to it + (a: "<b>Auf jeden</b>! Der <b>arme</b> Mann. Seit <b>seine</b> <b>Frau</b> <b>gestorben</b> ist, <b>wohnt</b> er <b>ganz alleine</b> in dem großen Haus."))(display: "Messenger")}
+|=
+
+=|
+
+[[Kennst du ihn gut?]]
+
+
+:: Kennst du ihn gut?
+{(set: $responses to it + (a: "<b>Kennst du</b> <b>ihn</b> <b>gut</b>?</b>"))(set: $responses to it + (a: "<b>Nicht wirklich</b>. Aber ... Moment!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Was ist?]]
+
+
+:: Was ist?
+{(set: $responses to it + (a: "Was ist?"))(set: $responses to it + (a: "Frodo ist <b>verschwunden</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Wie meinst du?]]
+
+
+:: Wie meinst du?
+{(set: $responses to it + (a: "<b>Wie meinst du</b>?"))(set: $responses to it + (a: "Er ist nicht auf seinem <b>Schlafplatz</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Vielleicht hat ihn der Knall erschreckt?]]
+
+
+:: Vielleicht hat ihn der Knall erschreckt?
+{(set: $responses to (a: "<b>Vielleicht</b> hat ihn der <b>Knall</b> <b>erschreckt</b>?"))(set: $responses to it + (a: "Warte mal! Ich <b>gehe</b> ihn <b>schnell</b> <b>suchen</b>."))
+(set: $vocab to 6)
+(display: "Messenger")
+(display: "Quiz 6")
+}
+|=
+
+=|
+
+[[Ok. Pass auf dich auf!]]
+
+
+:: Ok. Pass auf dich auf!
+{(set: $responses to it + (a: "Ok. <b>Pass auf dich auf</b>!"))(set: $responses to it + (a: "XXX"))(display: "Messenger")}
+|=
+
+=|
+
+[[Und? Hast du ihn gefunden?]]
+
+:: Und? Hast du ihn gefunden?
+{(set: $responses to it + (a: "Und? Hast du ihn <b>gefunden</b>?"))(set: $responses to it + (a: "Ich habe im <b>ganzen</b> Haus <b>gesucht</b>. Er ist nicht im <b>Wohnzimmer</b>, nicht in der <b>Küche</b>, nicht im <b>Badezimmer</b> und auch nicht im <b>Keller</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Und jetzt?]]
+
+
+:: Und jetzt?
+{(set: $responses to it + (a: "<b>Und jetzt</b>?"))(set: $responses to it + (a: "Ich weiß nicht. Was <b>soll</b> ich jetzt <b>tun</b>? Das Gewitter hat <b>ein bisschen</b> <b>nachgelassen</b>. Aber es regnet immer noch wie verrückt. Oh, Mann! Du <b>wirst</b> es nicht <b>glauben</b>!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Was??]]
+
+
+:: Was??
+{(set: $responses to it + (a: "Was??"))(set: $responses to it + (a: "Mein Nachbar! Er steht jetzt auf der <b>Veranda</b>. Sein Schlafanzug ist <b>klatschnass</b>."))
+(display: "Messenger")}
+}
+|=
+
+=|
+
+[[Was macht er da?]]
+
+
+:: Was macht er da?
+{(set: $responses to it + (a: "<b>Was macht er</b> da?"))(set: $responses to it + (a: "<b>Gute</b> <b>Frage</b>. Er hat eine <b>Gießkanne</b> in der Hand und – ich glaube es nicht! Er <b>gießt</b> die verdammten <b>Blumen</b>!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Im Regen?]]
+
+
+:: Im Regen?
+{(set: $responses to it + (a: "Im Regen?"))(set: $responses to it + (a: "Vielleicht hat der Blitz <b>irgendetwas</b> in ihm <b>erweckt</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Wie meinst du??]]
+
+
+:: Wie meinst du??
+{(set: $responses to it + (a: "Wie meinst du??"))(set: $responses to it + (a: "<b>Na ja</b>. Vielleicht hat er seine <b>tote</b> Frau <b>gesehen</b> oder <b>so etwas</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Spinnst du?]]
+
+
+:: Spinnst du?
+{(set: $responses to it + (a: "<b>Spinnst du</b>?"))(set: $responses to it + (a: "Keine Ahnung. Ich habe <b>vor ein paar Tagen</b> so ein Video auf YouTube gesehen ..."))(display: "Messenger")}
+|=
+
+=|
+
+[[Du solltest mit ihm sprechen.]]
+
+
+:: Du solltest mit ihm sprechen.
+{(set: $responses to (a: "<b>Du solltest</b> <b>mit</b> ihm sprechen."))(set: $responses to it + (a: "<b>Niemals</b>! <b>Schlafwandler</b> <b>darf man nicht</b> <b>aufwecken</b>."))(set: $vocab to "7")
+(display: "Messenger")
+(display: "Quiz 7")}
+|=
+
+=|
+
+[[Was macht er jetzt?]]
+
+
+:: Was macht er jetzt?
+{(set: $responses to it + (a: "Was macht er jetzt?"))(set: $responses to it + (a: "Er <b>sitzt</b> auf der Veranda und hat eine <b>nasse</b> Zigarette im <b>Mund</b>. Jetzt <b>nimmt</b> er eine <b>Schaufel</b> und ..."))(display: "Messenger")}
+|=
+
+=|
+
+[[Wie bitte??]]
+
+
+:: Wie bitte??
+{(set: $responses to it + (a: "Wie bitte??"))(set: $responses to it + (a: "Er <b>gräbt</b> ein <b>Loch</b>. <b>Mitten in</b> seinem <b>Blumenbeet</b>!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Vielleicht hat der Blitz wirklich sein Gehirn beeinflusst.]]
+
+
+:: Vielleicht hat der Blitz wirklich sein Gehirn beeinflusst.
+{(set: $responses to it + (a: "Vielleicht hat der Blitz <b>wirklich</b> sein <b>Gehirn</b> <b>beeinflusst</b>."))(set: $responses to it + (a: "Er gräbt wie verrückt. Sein Schlafanzug ist schon total <b>schmutzig</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Willst du die Polizei rufen?]]
+
+
+:: Willst du die Polizei rufen?
+{(set: $responses to it + (a: "<b>Willst du</b> die <b>Polizei</b> <b>rufen</b>?"))(set: $responses to it + (a: "Die Polizei? Oder die <b>Irrenanstalt</b>?"))(display: "Messenger")}
+|=
+
+=|
+
+[[Mensch, Sarah! Das ist nicht lustig. Vielleicht hat der Mann wirklich Probleme.]]
+
+
+:: Mensch, Sarah! Das ist nicht lustig. Vielleicht hat der Mann wirklich Probleme.
+{(set: $responses to it + (a: "<b>Mensch</b>, Sarah! Das ist nicht <b>lustig</b>. Vielleicht hat der Mann wirklich Probleme."))(set: $responses to it + (a: "Ich mache keine <b>Witze</b>. Er steht schon <b>bis zu</b> den <b>Knien</b> in dem Loch. Oh mein Gott!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Was??!]]
+
+
+:: Was??!
+{(set: $responses to it + (a: "Was??!"))(set: $responses to it + (a: "Er hat sich gerade <b>hingelegt</b>! Und jetzt <b>füllt</b> er das Loch mit <b>Erde</b> auf!"))(display: "Messenger")}
+|=
+
+=|
+
+[[Wie bitte? Er liegt in dem Loch?]]
+
+
+:: Wie bitte? Er liegt in dem Loch?
+{(set: $responses to it + (a: "Wie bitte? Er <b>liegt</b> in dem Loch?"))(set: $responses to it + (a: "Ja, Mann! Was <b>soll</b> ich tun? Er ist jetzt <b>fast</b> <b>komplett</b> mit Erde <b>bedeckt</b>. <b>Nur noch</b> seine <b>Stirn</b> ist <b>sichtbar</b>. Und die Finger."))(display: "Messenger")}
+|=
+
+=|
+
+[[Sarah, du musst etwas tun!]]
+
+
+:: Sarah, du musst etwas tun!
+{(set: $responses to (a: "Sarah, du <b>musst</b> etwas tun!"))(set: $responses to it + (a: "Aber was?"))
+(set: $vocab to "8")
+(display: "Messenger")
+(display: "Quiz 8")
+}
+|=
+
+=|
+
+[[Geh runter und hilf ihm!]]
+
+
+:: Geh runter und hilf ihm!
+{(set: $responses to it + (a: "<b>Geh</b> <b>runter</b> und <b>hilf</b> <b>ihm</b>!"))(set: $responses to it + (a: "Oh, warte! Da ist Frodo ..."))(display: "Messenger")}
+|=
+
+=|
+
+[[Was macht er?]]
+
+
+:: Was macht er?
+{(set: $responses to it + (a: "Was macht er?"))(set: $responses to it + (a: "Gute Frage. Ähm, ich glaube, er <b>leckt</b> die Finger meines Nachbarn. Oh, und jetzt <b>beginnt</b> er zu <b>graben</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Ist dein Nachbar lebendig?]]
+
+
+:: Ist dein Nachbar lebendig?
+{(set: $responses to it + (a: "Ist dein Nachbar <b>lebendig</b>?"))(set: $responses to it + (a: "<b>Anscheinend</b>. Er <b>steht auf</b>. Jetzt geht er <b>zurück</b> <b>ins</b> Haus ..."))(display: "Messenger")}
+|=
+
+=|
+
+[[Und? Was macht er?]]
+
+
+:: Und? Was macht er?
+{(set: $responses to it + (a: "Und? Was macht er?"))(set: $responses to it + (a: "Er geht ins Wohnzimmer, nein, in die Küche! Frodo <b>wedelt</b> mit dem <b>Schwanz</b> und <b>folgt</b> ihm. Oh Mann, <b>die beiden</b> sind so <b>dreckig</b>! Jetzt geht mein Nachbar zum <b>Kühlschrank</b> und trinkt ein Glas <b>Milch</b>. Er <b>gibt</b> Frodo irgendetwas. Ich kann es <b>nicht genau</b> <b>sehen</b>. Eine <b>Wurst</b>?"))(display: "Messenger")}
+|=
+
+=|
+
+[[Wie bitte?]]
+
+
+:: Wie bitte?
+{(set: $responses to it + (a: "<b>Wie bitte</b>?"))(set: $responses to it + (a: "Ja! Moment, jetzt <b>verlässt</b> Frodo das Haus. Mein Nachbar <b>schließt</b> die Tür und .. ah, Licht <b>aus</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Und weiter?]]
+
+
+:: Und weiter?
+{(set: $responses to it + (a: "<b>Und weiter</b>?"))(set: $responses to it + (a: "<b>Nichts</b> weiter. <b>Was zur Hölle</b> ist hier <b>passiert</b>?"))(display: "Messenger")}
+|=
+
+=|
+
+[[Ist Frodo wieder zurückgekommen?]]
+
+
+:: Ist Frodo wieder zurückgekommen?
+{(set: $responses to it + (a: "Ist Frodo <b>wieder</b> <b>zurückgekommen</b>?"))(set: $responses to it + (a: "Ja, <b>gerade eben</b>."))(display: "Messenger")}
+|=
+
+=|
+
+[[Und was macht er?]]
+
+
+:: Und was macht er?
+{(set: $responses to (a: "Und was macht er?"))(set: $responses to it + (a: "Er schläft. Und <b>schnarcht</b>!"))
+(set: $vocab to "9")
+(display: "Messenger")
+(display: "Quiz 9")}
+|=
+
+=|
+
+[[Was bedeutet das alles?]]
+
+
+:: Was bedeutet das alles?
+{(set: $responses to it + (a: "Was bedeutet das alles?"))(set: $responses to it + (a: "Ich habe nicht die <b>leiseste</b> <b>Ahnung</b>. Mein <b>Teppich </b>ist <b>jedenfalls</b> <b>ruiniert</b>. Aber <b>zumindest</b> hat der Regen <b>aufgehört</b>. Ich gehe <b>zurück</b> ins Bett."))(display: "Messenger")}
+|=
+
+=|
+
+[[Alles klar. Gute Nacht!]]
+
+
+:: Alles klar. Gute Nacht!
+{(set: $responses to it + (a: "<b>Alles klar</b>. Gute Nacht!"))(set: $responses to it + (a: "Nacht."))(display: "Messenger")}
+<script>
+
+$('.end').delay(number+hesitate+lethimread+800).fadeIn(1700);
+$('.end span tw-link').delay(number+hesitate+lethimread+1700).fadeIn(1700);
+
+$("html, body").delay(number+hesitate).animate({ scrollTop: $(document).height() }, "slow");
+
+$( "footer" ).remove();
+
+</script><div class="end"> <h1>ENDE</h1>
+<span>(link: "See your Score")[(goto: "finalscore")]</span>
+</div>
+
+|=
+
+=|
+
+:: finalscore
+(display: "Menu")
+<script>
+if (typeof(score) !== "undefined") {
+} else { var score = 0
+}
+$('.scory').html(score);
+$('.bigscore').html(score);
+</script>
+<div class="badge"><img src="img/icons8-winner-document-100.png"><h1><span data-tooltip="Well done!">Gut gemacht!</span></h1>
+<div class="bigscore"></div>
+
+<div class="message"> You've successfully completed this Learn German with Stories episode! Your final score is <span class="scory"></span>.</div>
+
+<a class="fb sb" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.learnoutlive.schlaflos">Post on Facebook</a><a class="tw sb" href="https://twitter.com/intent/tweet?url=https://play.google.com/store/apps/details?id=com.learnoutlive.schlaflos&text=I just completed the Learn German with Stories Episode 'Schlaflose Sarah'&via=_learn_german&hashtags=schlaflosesarah,learngermanwithstories,learngerman">Share on Twitter</a>
+
+<div class="message"><p/>
+Want to get more German stories? Join our free <a href="https://mailchi.mp/learnoutlive/learn-german-with-stories">email course</a> 💌.
+</div>
+
+</div>
+
+<script>
+
+var readout = $('.platform').text();
+
+// alert(readout)
+
+if (readout == "Android") {
+$('.bigscore').css({"line-height": "1em", "padding-top" : "0.2em"});
+}
+
+if (readout == "iOS") {
+newUrlTW = "https://twitter.com/intent/tweet?url=https://apps.apple.com/app/id1492913561&text=I just completed the Learn German with Stories Episode 'Schlaflose Sarah'&via=_learn_german&hashtags=schlaflosesarah,learngermanwithstories,learngerman"
+newUrlFB = "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fapps.apple.com%2Fapp%2Fid1492913561"
+$('.tw').attr("href", newUrlTW);
+$('.fb').attr("href", newUrlFB);
+}
+</script>
+
+<style>
+
+
+#page-nav label {
+    font-size: 1.17em;
+	}
+	
+	tw-story br[data-cons] {
+	display:none;
+	}
+	</style>

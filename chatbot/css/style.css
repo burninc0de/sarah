@@ -1,0 +1,813 @@
+/*error messages*/
+/* tw-backdrop {display:none;}
+ */
+ 
+ body {
+	  overflow: auto;
+	  width:103%;
+
+ }
+ 
+	tw-story {
+		width:97%;
+		padding:0;
+		 padding-bottom: 3.6em;
+/* 	  background:url(https://books.learnoutlive.com/wp-content/themes/lolbooks/images/load2.gif) no-repeat center; */
+	  line-height:initial;
+	}
+
+
+
+	tw-passage {
+	  margin-bottom: 3%;
+	}
+	
+	tw-expression {
+		font-family: sans-serif;
+		font-size: 84%;
+	}
+	
+	tw-expression a {
+    color: #027783;
+}
+
+	.container tw-hook {
+		display: flex;
+		flex-direction: column;
+		margin: 1% 0;
+		width: 100%;
+	   /* border: 1px solid #525252; DEBUG*/
+	}
+
+tw-sidebar {
+    left: 15px !important;
+    top: 5px !important;
+    position: fixed;
+    z-index: 999;
+	background: white;
+    border: 1px solid lightgrey;
+    width: 65px !important;
+    border-radius: 5px;
+    height: 33px;
+	display:none !important;
+}
+
+.visited:hover {
+	color:#cdcdcd !important;
+}
+ 
+  
+
+tw-sidebar tw-icon {
+
+    opacity: 1;
+    font-size: 90%;
+    display: inline;
+	    margin: 0 4px;
+}
+
+.undo:before {
+  	content: "<";
+	color:black;
+}
+
+.redo:before {
+    content: ">";
+	color:black;
+}
+
+.whitespace {
+  height:48px;
+  display:block;
+  width:100%;
+}
+
+.quiz .whitespace {
+    height: 57px;
+}
+
+.quiz span {
+    border-bottom: 2px dotted #939393;
+    padding-bottom: 5px;
+}
+
+
+	/* hide last message*/
+
+	tw-expression tw-hook:nth-last-of-type(2) .txt {
+	  display:none;
+
+	}
+	
+	tw-expression tw-hook:nth-last-of-type(2) {
+    display: none;
+}
+
+ .voc
+{display:none;}
+
+
+	/* hiding messages by number if needed
+
+	tw-hook:nth-of-type(3) {
+		display: none;
+	}
+	*/
+	
+/* SPEECH BUBBLES */
+
+	
+	.speech {
+    display: inline-block;
+    position: relative;
+    border-radius: .99em;
+    padding: 12px 28px 15px 27px;
+    transition: initial;
+    max-width: 88%;
+    margin-bottom: 23px;
+}
+
+.speech.bubble-left {
+    background: lightgray;
+    left: 0;
+    margin-right: auto;
+	margin-left: 32px;
+}
+
+
+
+tw-hook.hideme {
+    opacity: 0;
+    position: absolute;
+    z-index: -999;
+}
+
+
+tw-link.hideme {color: transparent;}
+
+tw-link.hideme:after {content:"Continue ...";
+color:#666666;
+font-style:italic;
+}
+
+
+.seen:before {
+    content: "✔✓";
+    display: block;
+    font-size: 8pt;
+    color: #8f979a;
+    position: absolute;
+    bottom: -36px;
+    width: 140px;
+    left: 100%;
+    transition: 0.2s;
+}
+
+
+/* Avatar */
+
+.avatar {
+    transition: initial;
+    position: absolute;
+    margin-left: -57px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: initial;
+    margin-right: 19px;
+    background: url(../img/bot.jpg) no-repeat;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    background-size: 102%;
+    bottom: 0;
+}
+
+
+
+/* ANSWER BUTTON */
+
+/* empty left column*/
+tw-column[type~="left"] {
+ /*   display: none !important; */
+}
+
+	tw-columns {
+		color: white;
+		border-radius: 12px;
+    margin-top: -3em;
+	}
+
+	tw-column {
+		width: initial !important;
+	}
+
+
+	tw-column {
+		display:none;
+		width:100% !IMPORTANT; /*DEBUG*/
+	}
+
+
+
+	/* answer link */
+tw-column tw-expression[type="macro"] tw-link {
+    border-radius: 15px;
+    padding: 1px 8px;
+    border: 2px solid #7ba9cf;
+    margin: 14px 0 0 0px;
+    color: #7ba9cf;
+    font-size: 76%;
+    text-align: left;
+    line-height: 1.8em;
+    white-space: nowrap;
+    position: relative;
+    left: 0;
+    margin-left: 0.67em;
+    display: inline-block;
+	}
+
+	tw-column tw-link span {
+	/*text-overflow: ellipsis;*/
+	}
+
+
+
+	tw-link:hover, .enchantment-link:hover {
+		color: initial;
+	}
+
+
+
+/* 
+#intro {
+    color: #616161;
+    text-align: center;
+    font-size: 86%;
+    font-style: italic;
+	margin-top: 44px;
+    margin-bottom: 22px;
+} */
+
+.container tw-hook {
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0;
+    width: 100%;
+   /* border: 1px solid #525252; DEBUG*/
+}
+
+
+
+
+/* hiding messages
+
+tw-hook:nth-of-type(3) {
+    display: none;
+}
+*/
+
+
+
+
+.speech.bubble-right {
+    background: #00aabb;
+    right: 0;
+    margin-left: auto;
+
+}
+
+tw-expression tw-hook:nth-last-of-type(3) .speech {
+	display:none;
+}
+
+.left .txt {
+    color: black;
+	  transition: initial;
+}
+
+	.loading {
+		min-width: 67px;
+		margin-left: 13px;
+	  display:none;
+	  z-index:1;
+
+	}
+
+	.loading:before {
+		content: "Bookbot is writing ...";
+		font-size: 10pt;
+		color: #8f979a;
+		position: absolute;
+		top: 47px;
+		width: 140px;
+		left: -6px;
+		margin-bottom:20%;
+	}
+
+.multipart {display:none;}
+
+
+
+/* MENU */
+
+		#page-nav {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    min-height: 46px;
+    top: 0;
+
+    z-index: 9;
+}
+
+.whitebar {
+    background: #fffffff5;
+    height: 42px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+    z-index: 2;
+}
+
+	/* Hide Hamburger */
+	#page-nav label, #hamburger {
+	  display: none;
+	}
+
+	/* Menu Items */
+	#page-nav ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0; 
+	}
+	
+#page-nav ul li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px;
+    box-sizing: border-box;
+    color: black;
+    background: white;
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    margin: 0px 4px;
+    padding-right: 36px;
+}
+
+#page-nav ul li:nth-of-type(1) {
+    border-top: 1px solid #d9d9d9;;
+}
+
+	#page-nav ul li a {
+	  text-decoration: none;
+	}
+
+	/* [ON SMALL SCREENS] */
+
+		  
+	  
+	  #page-nav label:focus {
+    outline: none;
+}
+
+	 
+
+
+
+/* LOADING ANIMATION FOR TYPING */ 
+
+	.three-balls-loading{
+		position: relative;
+		display: inline-block;
+		margin-bottom: 16px;
+	}
+
+	.three-balls-loading span,
+	.three-balls-loading span:nth-child(1),
+	.three-balls-loading span:nth-child(2){
+	  position: absolute;
+	  top: 0;
+	  width: 8px;
+	  height: 8px;
+	  background: #fff;
+	  border-radius: 50%;
+	  left: 0;
+	}
+	.three-balls-loading span{
+	  animation: bounce 1s infinite;
+	  -webkit-animation: bounce 1s infinite;
+	}
+	.three-balls-loading span:nth-child(1){
+	  left: 18px;
+	  animation: bounce 1s infinite;
+	  -webkit-animation: bounce 1s infinite;
+	  -webkit-animation-delay: .2s;
+	  animation-delay: .2s;
+	}
+	.three-balls-loading span:nth-child(2){
+	  left: 37px;
+	  animation: bounce 1s infinite;
+	  -webkit-animation: bounce 1s infinite;
+	  -webkit-animation-delay: .4s;
+	  animation-delay: .4s;
+	}
+
+	/* Animation */
+	@keyframes bounce {
+		0% {
+		top: 0;
+			-webkit-animation-timing-function: ease-in;
+		}
+		40% {}
+		50% {
+		top: 6px;
+			-webkit-animation-timing-function: ease-out;
+		width: 8px;
+		}
+		55% {
+		top: 10px; 
+			-webkit-animation-timing-function: ease-in;
+		width: 8px;
+		height: 8px
+	  }
+		65% {
+		top: 2px;
+			-webkit-animation-timing-function: ease-out;
+		width: 8px;
+		height: 11px
+	  }
+		95% {
+			top: 0;		
+			-webkit-animation-timing-function: ease-in;
+		}
+		100% {
+		top: 0;
+			-webkit-animation-timing-function: ease-in;
+		}
+	}
+	
+/* SIDEBAR */
+
+	tw-sidebar {
+		top: 2em;
+		left: 0;
+		width: 2em;
+	}
+
+	tw-sidebar tw-icon {
+		color:white;
+		opacity:1;
+		font-size:90%;
+	}
+	
+
+/* FOOTER */
+
+	footer {
+		background: #f6f6f6;
+		height: 256px;
+		width: 100%;
+		display: block;
+		position: fixed;
+		z-index: 2;
+		bottom: -137px;
+		border-top: 1px solid #d1d1d1;
+}
+
+
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+    position: absolute;
+	font-style:initial;
+    bottom: 110%;
+    margin-bottom: 5px;
+    margin-left: 0;
+    padding: 12px 13px;
+    min-width: 90px;
+    max-width: 250%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.txt span {
+    color: initial;
+    text-decoration: initial;
+    border-bottom: 1px dotted #a1a1a1;
+    padding: 0.05em 0;
+    white-space: nowrap;
+    z-index: 0;
+    font-style: italic;
+}
+
+
+	.splash h1 span, .badge h1 span  {
+    border-bottom: 4px dotted #929292;
+	}
+
+
+.right .txt span {
+    border-color: #1e5cab;
+	color:white;
+}
+
+
+
+/* hack to hide speech message and only show speaker icon */
+
+.vol:before {
+
+}
+
+.vol {
+ font-size: 1px;
+    letter-spacing: -1px;
+    color: transparent;
+  cursor:pointer;
+  display:none;
+}
+
+.vol tw-expression, tw-icon.undo {
+  /*   display: none; */
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 900px) {
+  body, footer {
+
+ /*    width: 80%; */
+    margin: 0 auto;
+  max-width: 800px; 
+
+}
+
+#page-nav {
+
+    max-width:800px;
+    left: 1px;
+    margin:0 auto !important;
+    width: 80%;
+}
+
+footer {
+    background:white;
+    border:initial;
+}
+
+body tw-sidebar {
+
+    left: 50% !important;
+    margin-left:-400px;
+}
+}
+
+/* NIGHT STYLES*/
+
+
+
+
+
+#page-nav label.score {
+    color: #f2a634;
+    z-index: 999;
+    top: 1px;
+    display: inline-block;
+    left: 70px;
+    width: 30px;
+    font-size: 1em;
+    vertical-align: middle;
+    height: 30px;
+    font-weight: bold;
+  /*   display: none; */
+}
+
+
+
+.medalcont {
+    border-radius: 7px;
+    display: block;
+    width: 182px;
+    left: 144px;
+    display: block;
+    z-index: 9;
+    top: 4px;
+    height: 31px;
+}
+
+#page-nav label.medal {
+    color: #f2a634;
+    z-index: 999;
+    top: 4px;
+    left: 8px;
+    font-size: 1em;
+    vertical-align: middle;
+    font-weight: bold;
+    width: 0px;
+/* 	max-width:163px; */
+    position: absolute;
+    height: 20px;
+    background: url(../img/icons8-star-filled-48.png) repeat-x;
+    display: block;
+    background-size: 18px;
+}
+
+
+/* disabling Harlowe transition */
+[data-t8n^=dissolve].transition-in {
+	-webkit-animation:appear 0ms step-start;
+	animation:appear 0ms step-start;
+}
+
+
+
+/* CREDITS */
+
+.credits {
+    font-size: 0.8em;
+    color: black;
+    margin-top: 22px;
+    font-family: Arial;
+	padding: 1.3em;
+}
+
+.credits h1 {
+    font-family: arial;
+    font-size: 1.3em;
+	    margin-bottom: 19px;
+}
+
+.vernum {
+    float:right;
+    font-size: 50%;
+}
+
+
+br {display:none;}
+
+
+.debug {
+	display:none;
+	color: red;
+    font-size: 100%;
+    position: fixed;
+    top: 5%;
+	background:lightgrey;
+	padding:12px;
+    left: 3%;
+    z-index: 999999;
+}
+
+.end  {
+	display:none;
+	text-align:center;
+    margin-bottom: 22px;
+}
+
+.end h1 {
+    color: black;
+    font-size: 200%;
+    clear: both;
+    margin-top: -33px;
+}
+
+.end span tw-link {
+	font-size:1em;
+	display:none;
+	font-family:Arial;
+	color:#00aabb;
+}
+
+
+/* FINALSCORE */
+
+.badge {
+    margin-top: 0.8em;
+    text-align: center;
+	
+}
+
+.badge h1 {
+color:black;
+font-size:1.5em;
+margin-bottom:0.8em;
+}
+
+.bigscore {
+    color: #ffffff;
+    border: 2px solid;
+    width: 61px;
+    margin: 0 auto;
+    font-size: 1.7em;
+    height: 61px;
+    border-radius: 50%;
+    background: #f2a634;
+    border: 2px solid #f6e498;
+		margin-bottom:0.5em;
+}
+
+.message {
+    color: black;
+    font-size: 0.8em;
+    font-family: arial;
+    text-align: center;
+	line-height:1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.sb {
+cursor:pointer;
+font-family:arial;
+    display: inline-block;
+    border: 2px solid red;
+    padding: 0.7em;
+    font-size: 0.8em;
+    border-radius: 8px;
+        margin: 0.8em 0.5em;
+	color: initial;
+    text-decoration: none;
+}
+
+.sb.fb {
+color:#3b5998;
+border-color:#3b5998;
+}
+
+.sb.tw {
+color:#1DA1F2;
+border-color:#1DA1F2;
+}
+
+
+/* All Smartphones in portrait ----------- */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 516px) 
+ {
+	 tw-column {
+    margin-left: 0em !important;
+}
+ }
+

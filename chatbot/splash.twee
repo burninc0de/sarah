@@ -1,0 +1,120 @@
+:: splash {"position":"495,122","size":"100,100"}
+<div class="splash"><img src="img/sarah.png" style="text-align:center;">
+<h1><span data-tooltip="Sleepless">Schlaflose</span> Sarah</h1><h4>Learn German with Stories: a Chat Story by André Klein</h4>
+<div class="savegamedetected">{(if: (saved-games:) contains "autosave")[
+<div class="startmessage">Would you like to continue from where you left off or start over?</div>
+
+(link: "Continue")[(load-game: "autosave")] (link: "Restart")[(goto: "resetscore")]]
+<script>
+var score = Number(localStorage.getItem("score_store"));
+console.log("found " + score);
+</script>
+
+(else:)[
+
+<div class="startmessage">It's the middle of the night. You've got <b>1</b> new message ...</div>
+
+[[Start->resetscore]]
+
+]}</div>
+
+<style>
+
+body {
+    background: url(img/round.png)
+	}
+	
+	h1 span {
+    border-bottom: 4px dotted #929292;
+}
+
+
+	
+.savegamedetected tw-link, .savegamedetected {
+    font-size: initial;
+	color:black;
+}
+
+h1, h4 {
+    color: black;
+	
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 0.7em;
+    font-weight: normal;
+	line-height: 1.5em;
+	margin-bottom:1.8em;
+}
+
+
+
+.savegamedetected tw-link {
+    color: #2196F3;
+    padding: 7px 4px;
+    border: 2px solid #2196F3;
+    border-radius: 8px;
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+
+tw-passage {
+    text-align: center;
+}
+
+img {width:50%;}
+
+.message {
+    padding: 12px;
+}
+
+.savegamedetected {
+    background: white;
+    padding: 23px;
+    border-radius: 9px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+tw-story {
+    background: transparent;
+	}
+	
+</style>
+
+<script>
+$('body').addClass('splash');
+$('footer').remove();
+$('body').removeClass('night');
+
+
+</script></div>
+
+<script>
+
+document.addEventListener("deviceready", onDeviceReady, false);
+var devicePlatform = "init";
+
+function onDeviceReady() {
+
+     devicePlatform = device.platform;
+	// alert(device.platform)
+	
+		if (devicePlatform == "Android") {
+		} else {
+	devicePlatform = "unknown"
+	// alert ("overwrite device.platform");
+	}
+	
+	}
+	
+
+	
+</script>

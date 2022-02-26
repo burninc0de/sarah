@@ -1,0 +1,265 @@
+:: StoryTitle
+Chatbot V 0.01
+
+
+:: StoryData
+{
+	"ifid": "0458F4E6-60C6-478A-B4A2-7911A7EF5509",
+	"format": "Harlowe",
+	"format-version": "3.1.0",
+	"start": "Start",
+	"tag-colors": {
+		"header": "green"
+	},
+	"zoom": 1
+}
+
+
+:: Story Stylesheet [stylesheet]
+@import "css/style.css";
+
+:: Story JavaScript [script]
+
+
+:: Start {"position":"494,297","size":"100,100"}
+
+
+<script>//init variables 
+
+var i = 0;
+var lethimread = 0;
+var rlength = 0;
+$('body').hide().fadeIn('fast');
+</script>{
+
+	(set: $responses to (a: "XXX") )
+	(set: $responses to it + (a: "<span data-tooltip='Hi there!'>Hallo!</span> 👋 So you want to learn German with stories?" ) )
+	(display: "Messenger")
+
+}
+
+
+=|
+[[Ja!]]
+[[Nein]]
+
+<script>$('body br').remove();</script>
+
+::Ja!
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "<span data-tooltip='That&#8216;s awesome.'>Das ist großartig!</span> ✨ I'd like to ask you a few questions to help you get started. I'll even teach you a few words and expressions along the way (just tap the underlined words in my messages). <span data-tooltip='Alright?'>In Ordnung?</span>"))(display: "Messenger")}
+
+
+=|
+[[Ok]]
+[[Nope]]
+
+::Nein
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "That's okay. There are a million ways to learn German and whatever works for you is best. Head on over to our <a target='_top' href='https://learnoutlive.com/blog/'>blog</a> to discover tons of free German learning resources. Can I help with something else?"))(display: "Messenger")}
+
+
+=|
+[[Nope]]
+[[Actually, I changed my mind. Tell me more!]]
+[[I want to learn more about your books]]
+
+::Nope
+
+{(set: $responses to it + (a: "Nope"))(set: $responses to it + (a: "Ok. <span data-tooltip='See you around.'>Bis dann!</span> 👋"))(display: "Messenger")}
+=|
+[[start over|Start]]
+
+
+::Actually, I changed my mind. Tell me more!
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "<span data-tooltip='That&#8216;s awesome.'>Das ist großartig!</span> ✨ I'd like to ask you a few questions to help you get started. <span data-tooltip='Alright?'>In Ordnung?</span>"))(display: "Messenger")}
+
+
+=|
+[[Ok]]
+[[Nope]]
+
+
+::Ok
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "<span data-tooltip='Splendid'>Wunderbar!</span> Do you have any experience learning German with stories?"))(display: "Messenger")}
+
+
+=|
+
+[[none at all]]
+[[a little]]
+[[quite a bit]]
+
+
+::none at all
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "<span data-tooltip='Not a problem'>Kein Problem!</span> Our 6 day 📧 <a target='_top' href='https://mailchi.mp/learnoutlive/learn-german-with-stories'>free email course</a> will help you get started in no time. Find out why learning German with stories works, discover tons of (free) resources and helpful tips and tools to get the most out of your learning journey. Sign up 👉 <a target='_top' href='https://mailchi.mp/learnoutlive/learn-german-with-stories'>here</a>. Anything else?"))(display: "Messenger")}
+
+
+=|
+
+[[I don't like email]]
+[[I want to learn more about your books]]
+[[Nope]]
+
+
+::a little
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "<span data-tooltip='Brilliant'>Hervorragend!</span> 😎 What can I do to help you take your German learning journey to the next level?"))(display: "Messenger")}
+
+=|
+
+[[I want to learn more about your books]]
+
+
+::quite a bit
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "<span data-tooltip='fabulous'>Fantastisch!</span> 🎉 What can I help you with?"))(display: "Messenger")}
+
+=|
+
+[[I want to learn more about your books]]
+[[Any literature recommendations?]]
+
+
+
+::Any literature recommendations?
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "Head over to our <a target='_top' href='https://learnoutlive.com/german-reading-materials/'>link library</a> to discover all kinds of (free) resources from German short stories to novels, audiobooks and more. Anything else?"))(display: "Messenger")}
+
+=|
+
+[[I want to learn more about your books]]
+
+::I need help with grammar and rules
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "There are tons of excellent free resources out there for learning German. Check out these <a target='_top' href='https://learnoutlive.com/free-german-textbooks-pdf-epub-kindle/'>free German textbooks</a> and <a target='_top' href='https://learnoutlive.com/free-german-worksheets-pdf-download-exercises/'>worksheets</a>."))(display: "Messenger")}
+
+=|
+
+[[I want to learn more about your books]]
+
+
+
+::I don't like email
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "<span data-tooltip='Understood'>Verstanden</span>. If you'd rather dig through our resources on your own, head over to our <a target='_top' href='https://learnoutlive.com/german-reading-materials/'>link library</a> to discover all kinds of free resources from German short stories to audiobooks, worksheets and more. Anything else?"))(display: "Messenger")}
+
+
+=|
+
+[[Nope]]
+[[I want to learn more about your books]]
+
+
+::I want to learn more about your books
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "<span data-tooltip='Marvellous'>Klasse</span>. What would you like to know?"))(display: "Messenger")}
+
+
+=|
+
+[[Show me books for beginners]]
+[[... intermediates]]
+[[... advanced]]
+[[general questions]]
+
+
+::Show me books for beginners
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "For beginner German learners I'd recommend checking out 🟢 <a target='_top' href='https://books.learnoutlive.com/category/dino-lernt-deutsch/'>Dino lernt Deutsch</a>, a German travel/comedy series for beginners starting at the A1/A2 level. Learn more <a target='_top' href='https://books.learnoutlive.com/category/dino-lernt-deutsch/'>here</a>. Also take a look at our 💬  <a target='_top' href='https://books.learnoutlive.com/easy-german-dialogues-fun-simple-conversation-practice-for-beginners-and-intermediates-audiobook/'>Easy German Dialogues</a>."))(display: "Messenger")}
+
+
+=|
+
+[[... intermediates]]
+[[... advanced]]
+[[general questions]]
+
+::... intermediates
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "For intermediate German learners check out our 🟠 <a target='_top' href='https://books.learnoutlive.com/category/baumgartner-momsen/'>Baumgartner & Momsen</a> series, a mystery series for beginners starting at the B1/B2 level. Learn more <a target='_top' href='https://books.learnoutlive.com/category/baumgartner-momsen/'>here</a>. "))(display: "Messenger")}
+
+
+=|
+[[Show me books for beginners]]
+[[... advanced]]
+[[general questions]]
+
+
+::... advanced
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "For advanced learners we have the 🔴 <a target='_top' href='https://books.learnoutlive.com/category/aschkalon/'>Aschkalon</a> trilogy, an interactive fantasy story starting at the B2/C1 level. Learn more <a target='_top' href='https://books.learnoutlive.com/category/aschkalon/'>here</a>. "))(display: "Messenger")}
+
+=|
+[[Show me books for beginners]]
+[[... intermediates]]
+[[general questions]]
+
+
+
+::general questions
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "Okay. What would you like to know?"))(display: "Messenger")}
+
+
+=|
+
+
+[[Where can I get these books?]]
+[[I need help with grammar and rules]]
+
+
+::Where can I get these books?
+
+
+{(set: $responses to it + (a: (passage:)'s name)))(set: $responses to it + (a: "You can find the digital editions of our ebooks and audiobooks on our own <a target='_top' href='https://books.learnoutlive.com'>store</a>, on Amazon Kindle, Apple Books, Nook, Kobo and many other stores. Paperback editions are available via Amazon, Book Depository, Barnes & Noble and many other stores."))(display: "Messenger")}
+
+=|
+
+[[I need help with grammar and rules]]
+
+
+
+
+
+
+::OPTION
+
+{(set: $responses to it + (a: "OPTION"))(set: $responses to it + (a: "BOTREPLY"))(display: "Messenger")}
+
+
+=|
+
+[[USERREPLY]]
+
+
+
+
+:: Startup [startup] {"position":"308,9","size":"100,100"}
+{
+	(set: $right to false)
+	(set: $vocab to 1)
+}
+
+
+::About
+
+
+
+:: $_start_passage {"position":"496,648","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: start {"position":"616,648","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: resetscore {"position":"624,121","size":"100,100"}
+<script>
+var reset = true;
+</script>
+
+(goto: "Start")

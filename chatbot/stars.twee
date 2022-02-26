@@ -1,0 +1,68 @@
+:: stars
+{
+<div class="medalcont">
+	<label class="medal"></label>
+</div>
+
+(if: $stars is 0)[
+
+<script>
+$( ".medal" ).css("display", "none");
+</script>
+
+](elseif: $stars is 1)[
+
+<script>
+$( ".medal" ).toggle().css("width", "3px");
+</script>
+
+](elseif: $stars is 2)[
+
+<script>
+$( ".medal" ).css("width", "38px");
+</script>
+
+](elseif: $stars is 3)[
+
+<script>
+$( ".medal" ).css("width", "56px");
+</script>
+
+](elseif: $stars is 4)[
+
+<script>
+$( ".medal" ).css("width", "73px");
+</script>
+
+](elseif: $stars is 5)[
+
+<script>
+$( ".medal" ).css("width", "89px");
+</script>
+
+](elseif: $stars is 6)[
+
+<script>
+$( ".medal" ).css("width", "109px");
+</script>
+
+](elseif: $stars is 7)[
+
+<script>
+$( ".medal" ).css("width", "127px");
+</script>
+
+](elseif: $stars is 8)[
+
+<script>
+$( ".medal" ).css("width", "146px");
+</script>
+
+](elseif: $stars is 9)[
+
+<script>
+$( ".medal" ).css("width", "160px");
+</script>
+
+]
+}
