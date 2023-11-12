@@ -49,13 +49,23 @@
     });
 	
 	function clearAllLocalData() {
-    // Clear localStorage
-    localStorage.clear();
+    // Show confirmation dialog
+    var isConfirmed = confirm('Do you really want to start over?');
 
-    // Clear sessionStorage
-    sessionStorage.clear();
+    if (isConfirmed) {
+        // Clear localStorage
+        localStorage.clear();
 
-    console.log('Local data cleared.');
+        // Clear sessionStorage
+        sessionStorage.clear();
+
+        console.log('Local data cleared.');
+
+        // Reload the page
+        location.reload();
+    } else {
+        console.log('Operation canceled.');
+    }
 }
 	
 	
@@ -85,7 +95,19 @@
     vertical-align:middle;
     transform: scale(0.7);
     position:relative;
-}</style>
+}
+
+#restart {
+    margin-top: 13px;
+    display: block;
+    position: absolute;
+    z-index: 9999999;
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+}
+
+</style>
 
 <tw-story></tw-story>
 
