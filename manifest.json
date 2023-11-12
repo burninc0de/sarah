@@ -8,7 +8,7 @@
   "scope": "/",
   "short_name": "sarah.learnoutlive",
   "start_url": "/",
-  "description: "Discover learning German with short stories! Boost your vocabulary, super-charge your text comprehension and immerse yourself in a suspenseful story by German author André Klein.",
+  "description": "Discover learning German with short stories! Boost your vocabulary, super-charge your text comprehension and immerse yourself in a suspenseful story by German author André Klein.",
   "theme_color": "#ffffff",
   "categories": [
     "books",
