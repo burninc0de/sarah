@@ -25,6 +25,18 @@
 	
 	
 	if (document.querySelector('.splash')) {
+	
+	
+	// Get the first instance of .splash img
+    var firstSplashImg = document.querySelector('.splash img:first-child');
+
+    // Get the #installButton element
+    var installButton = document.getElementById('installButton');
+
+    // Insert #installButton directly underneath the first .splash img
+    firstSplashImg.parentNode.insertBefore(installButton, firstSplashImg.nextSibling);
+	
+	
 
       // Show the install button
       document.getElementById('installButton').style.display = 'block';
