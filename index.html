@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<div id="restart" style="display:none;">restart</div>
+<div id="restart" onclick="clearAllLocalData();">restart</div>
 <button id="installButton" style="display:none;">install app</button>
 
   <script>
@@ -47,6 +47,18 @@
         deferredPrompt = null;
       });
     });
+	
+	function clearAllLocalData() {
+    // Clear localStorage
+    localStorage.clear();
+
+    // Clear sessionStorage
+    sessionStorage.clear();
+
+    console.log('Local data cleared.');
+}
+	
+	
   </script>
   
   <style>
