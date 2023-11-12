@@ -11,7 +11,7 @@
 
 <body>
 <div id="restart" onclick="clearAllLocalData();">&#10227;</div>
-<button id="installButton" style="display:none;">install app</button>
+<img src="img/pwa.png" id="installButton" style="display:none;"/>
 
   <script>
     let deferredPrompt;
@@ -98,14 +98,6 @@
     font-size: 18px;
     text-align: center;
     cursor: pointer;
-}
-
-#installButton:before {
-    content:url("/pwa_assets/icons/android/android-launchericon-48-48.png");
-        display: inline-block;
-    vertical-align:middle;
-    transform: scale(0.7);
-    position:relative;
 }
 
 #restart {
