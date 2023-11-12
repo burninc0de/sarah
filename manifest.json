@@ -1,0 +1,20 @@
+{
+  "background_color": "#ffffff",
+  "description": "",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Schlaflose Sarah",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "sarah.learnoutlive",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "books",
+    "education"
+  ],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": [],
+  "id": "sarah_pwa"
+}
