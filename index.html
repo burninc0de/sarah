@@ -11,7 +11,7 @@
 
 <body>
 
-<button id="installButton" style="display:none;">Install app</button>
+<button id="installButton" style="display:none;">download app</button>
 
   <script>
     let deferredPrompt;
@@ -44,6 +44,27 @@
       });
     });
   </script>
+  
+  <style>
+  #installButton {
+    width: fit-content;
+    height:50px;
+    background:white;
+    border-radius:8px;
+    margin:0 auto;
+    padding: 0px 20px;
+    font-size:18px;
+        text-align:center;
+    cursor:pointer;
+}
+
+#installButton:before {
+    content:url("/pwa_assets/icons/android/android-launchericon-48-48.png");
+        display: inline-block;
+    vertical-align:middle;
+    transform: scale(0.7);
+    position:relative;
+}</style>
 
 <tw-story></tw-story>
 
