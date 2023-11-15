@@ -12,6 +12,7 @@
 <body>
 <div id="restart" onclick="clearAllLocalData();"><img src="img/redo2.svg"/></div>
 <img src="img/pwa2.png" id="installButton" style="display:none;"/>
+<div class="ios_safari">Tap the <img src="img/share.jpg" alt="share"/> Share Icon and "Add to Home Screen"</div>
 
   <script>
     let deferredPrompt;
@@ -60,6 +61,28 @@
       });
     });
 	
+	
+	document.addEventListener("DOMContentLoaded", function() {
+
+	
+	const appleExpression = /Apple/i;
+const safariExpression = /Safari/i;
+
+const isAppleSafari = () => {
+    return appleExpression.test(navigator.vendor) && 
+           safariExpression.test(navigator.userAgent);
+};
+ var element = document.querySelector('.splash .ios_safari');
+
+
+// Usage example:
+
+if (isAppleSafari()) {
+     element.style.display = 'block';
+}
+	
+	});
+	
 	function clearAllLocalData() {
     // Show confirmation dialog
     var isConfirmed = confirm('Do you really want to start over?');
@@ -98,6 +121,25 @@
     font-size: 18px;
     text-align: center;
     cursor: pointer;
+}
+
+.ios_safari {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 18px 0 23px 0;
+    text-align: center;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+	    margin-left: -2px;
+		display:none;
+}
+
+.ios_safari img {
+    width: 16px;
+    vertical-align: sub;
+    height:auto;
 }
 
 #restart {
