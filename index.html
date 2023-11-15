@@ -12,7 +12,7 @@
 <body>
 <div id="restart" onclick="clearAllLocalData();"><img src="img/redo2.svg"/></div>
 <img src="img/pwa2.png" id="installButton" style="display:none;"/>
-<div class="ios_safari">Tap the <img src="img/share.jpg" alt="share"/> Share Icon and "Add to Home Screen"</div>
+<div class="ios_safari" id="iosban">Tap the <img src="img/share.jpg" alt="share"/> Share Icon and "Add to Home Screen"</div>
 
   <script>
     let deferredPrompt;
@@ -62,27 +62,7 @@
     });
 	
 	
-	document.addEventListener("DOMContentLoaded", function() {
 
-	
-	const appleExpression = /Apple/i;
-const safariExpression = /Safari/i;
-
-const isAppleSafari = () => {
-    return appleExpression.test(navigator.vendor) && 
-           safariExpression.test(navigator.userAgent);
-};
- var element = document.querySelector('.splash .ios_safari');
-
-
-// Usage example:
-
-if (isAppleSafari()) {
-     element.style.display = 'block';
-}
-	
-	});
-	
 	function clearAllLocalData() {
     // Show confirmation dialog
     var isConfirmed = confirm('Do you really want to start over?');
@@ -102,6 +82,25 @@ if (isAppleSafari()) {
         console.log('Operation canceled.');
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+var is_ios = /iP(ad|od|hone)/i.test(window.navigator.userAgent),
+    is_safari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+var ios_bann = document.querySelector('#iosban');
+
+
+
+if (is_ios && is_safari) {
+    console.log("ye");
+
+    ios_bann.style.display = 'block'; // Remove !important
+} else {
+    console.log("no");
+}
+
+ });
 	
 	
   </script>
