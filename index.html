@@ -89,11 +89,13 @@ var is_ios = /iP(ad|od|hone)/i.test(window.navigator.userAgent),
     is_safari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
 var ios_bann = document.querySelector('#iosban');
+        var startmessage = document.querySelector('.splash .startmessage');
 
 
 
 if (is_ios && is_safari) {
     console.log("ye");
+	
 
     ios_bann.style.display = 'block'; // Remove !important
 } else {
