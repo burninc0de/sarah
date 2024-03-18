@@ -16,6 +16,22 @@
 
   <script>
     let deferredPrompt;
+	
+	window.onload = function() {
+    showbanner();
+};
+	
+	showbanner() {
+		var newDiv = document.createElement("div");
+	newDiv.classList.add("new");
+	newDiv.innerHTML = "New version available on <a href='https://learnoutlive.com/stories/'>Chat Stories</a> »";
+	var body = document.body;
+	if (body.firstChild) {
+		body.insertBefore(newDiv, body.firstChild);
+	} else {
+		body.appendChild(newDiv);
+	}
+	}
 
     window.addEventListener('beforeinstallprompt', (event) => {
       // Prevent the default prompt
@@ -36,18 +52,6 @@
 
     // Insert #installButton directly underneath the first .splash img
     firstSplashImg.parentNode.insertBefore(installButton, firstSplashImg.nextSibling);
-
-var newDiv = document.createElement("div");
-newDiv.classList.add("new");
-newDiv.innerHTML = "New version available on <a href='https://learnoutlive.com/stories/'>Chat Stories</a> »";
-var body = document.body;
-if (body.firstChild) {
-    body.insertBefore(newDiv, body.firstChild);
-} else {
-    body.appendChild(newDiv);
-}
-	
-	
 
       // Show the install button
       document.getElementById('installButton').style.display = 'block';
