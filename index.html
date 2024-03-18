@@ -33,18 +33,12 @@
 	
 	
 	if (document.querySelector('.splash')) {
-	
-	
-	// Get the first instance of .splash img
-    var firstSplashImg = document.querySelector('.savegamedetected');
 
-    // Get the #installButton element
+    var firstSplashImg = document.querySelector('.savegamedetected');
     var installButton = document.getElementById('installButton');
 
-    // Insert #installButton directly underneath the first .splash img
     firstSplashImg.parentNode.insertBefore(installButton, firstSplashImg.nextSibling);
 
-      // Show the install button
       document.getElementById('installButton').style.display = 'block';
 	  }
     });
@@ -53,7 +47,6 @@
       // Show the installation prompt
       deferredPrompt.prompt();
 
-      // Wait for the user to respond to the prompt
       deferredPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === 'accepted') {
           console.log('User accepted the installation prompt');
@@ -93,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 var is_ios = /iP(ad|od|hone)/i.test(window.navigator.userAgent),
     is_safari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
-var ios_bann = document.querySelector('#iosban');
+		var ios_bann = document.querySelector('#iosban');
         var startmessage = document.querySelector('.startmessage');
 
 
@@ -136,10 +129,10 @@ if (is_ios && is_safari) {
     padding: 18px 0 23px 0;
     text-align: center;
     background: white;
-    border: 2px solid black;
     border-radius: 8px;
-	    margin-left: -2px;
-		display:none;
+    margin-left: -2px;
+    display: none;
+    z-index: 99999;
 }
 
 .ios_safari img {
