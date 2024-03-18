@@ -10,28 +10,19 @@
 </head>
 
 <body>
+<div class="new">New version available on <a href='https://learnoutlive.com/stories/'>Chat Stories</a> » <span class="close" onclick="closeBanner()">x</span></div>
 <div id="restart" onclick="clearAllLocalData();"><img src="img/redo2.svg"/></div>
 <img src="img/pwa2.png" id="installButton" style="display:none;"/>
 <div class="ios_safari" id="iosban">Tap the <img src="img/share.jpg" alt="share"/> Share Icon and "Add to Home Screen"</div>
 
   <script>
+  
+  function closeBanner() {
+    var banner = document.querySelector('.new');
+    banner.style.display = 'none';
+}
     let deferredPrompt;
-	
-	window.onload = function() {
-    showbanner();
-};
-	
-	showbanner() {
-		var newDiv = document.createElement("div");
-	newDiv.classList.add("new");
-	newDiv.innerHTML = "New version available on <a href='https://learnoutlive.com/stories/'>Chat Stories</a> »";
-	var body = document.body;
-	if (body.firstChild) {
-		body.insertBefore(newDiv, body.firstChild);
-	} else {
-		body.appendChild(newDiv);
-	}
-	}
+
 
     window.addEventListener('beforeinstallprompt', (event) => {
       // Prevent the default prompt
